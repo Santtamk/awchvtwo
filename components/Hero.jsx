@@ -98,6 +98,7 @@ const Hero_1 = () => {
         <img
           className="self-stretch h-[650px] relative rounded-[32px]"
           src="/hero_image.png"
+          alt="hero_image"
         />
       </div>
     </div>

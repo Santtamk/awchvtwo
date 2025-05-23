@@ -26,6 +26,7 @@ export const NewsCard = ({ title, description, image }) => (
         </div>
         <div className="size-4 lg:size-6 relative">
           <Image
+          alt="arrow_outward"
             src="/arrow_outward.svg"
             width={24}
             height={24}

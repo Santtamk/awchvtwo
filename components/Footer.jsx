@@ -41,6 +41,7 @@ const Footer = () => {
           <div className="size- p-1 lg:p-2.5 bg-primary-50 rounded-xl inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="size-4 lg:size-6 relative overflow-hidden">
               <Image
+              alt="instagram"
                 width={0}
                 height={0}
                 src="/social/instagram.svg"
@@ -51,6 +52,7 @@ const Footer = () => {
           <div className="size-  p-1 lg:p-2.5 bg-primary-50 rounded-xl inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="size-4 lg:size-6 relative overflow-hidden">
               <Image
+              alt="facebook"
                 width={0}
                 height={0}
                 src="/social/facebook.svg"
@@ -61,6 +63,7 @@ const Footer = () => {
           <div className="size-  p-1 lg:p-2.5 bg-primary-50 rounded-xl inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="size-4 lg:size-6 relative overflow-hidden">
               <Image
+              alt="x"
                 width={0}
                 height={0}
                 src="/social/x.svg"

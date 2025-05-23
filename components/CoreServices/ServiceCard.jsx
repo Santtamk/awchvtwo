@@ -27,6 +27,7 @@ const ServiceCard = ({ title, gradient, image }) => {
           </div>
           <div className="size-6 relative">
             <Image
+              alt="arrow"
               src="/arrow_outward.svg"
               width={24}
               height={24}

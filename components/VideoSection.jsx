@@ -14,7 +14,7 @@ const VideoSection = () => {
   const playCurrentVideo = () => {
     if (videoRef.current) {
       videoRef.current.load(); // reset
-      videoRef.current.play(); // autoplay
+      // videoRef.current.play(); // autoplay
       setIsPlaying(true);
     }
   };
@@ -41,7 +41,7 @@ const VideoSection = () => {
   const togglePlay = () => {
     if (!videoRef.current) return;
     if (videoRef.current.paused) {
-      videoRef.current.play();
+      // videoRef.current.play();
       setIsPlaying(true);
     } else {
       videoRef.current.pause();
