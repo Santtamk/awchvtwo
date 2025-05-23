@@ -30,7 +30,7 @@ const aboutUsCards = [
 
 const AboutUs = () => {
   return (
-    <div className="self-stretch p-12 bg-black-50 inline-flex flex-col justify-start items-center gap-5 overflow-hidden">
+    <div className="self-stretch p-12 bg-black-50 inline-flex flex-col justify-start items-center gap-5 overflow-hidden lg:px-25">
       <div className=" flex flex-col justify-center items-center gap-5">
         <div className="self-stretch flex flex-col justify-start items-start gap-2.5">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
