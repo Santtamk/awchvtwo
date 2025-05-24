@@ -1,7 +1,85 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const MainForm = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    specialty: "",
+    date: "",
+    time: "",
+    countryCode: "+91",
+    phone: "",
+    email: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // Prepare the data to match the API structure
+      const submissionData = {
+        name: `${formData.firstName} ${formData.lastName}`.trim(),
+        email: formData.email,
+        message: `Appointment Request:
+          Specialty: ${formData.specialty}
+          Date: ${formData.date}
+          Time: ${formData.time}
+          Phone: ${formData.countryCode}${formData.phone}`,
+      };
+
+      const response = await fetch("http://localhost:5000/api/submissions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submissionData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Something went wrong");
+      }
+
+      setSubmitStatus({
+        success: true,
+        message: "Appointment booked successfully!",
+      });
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        specialty: "",
+        date: "",
+        time: "",
+        countryCode: "+91",
+        phone: "",
+        email: "",
+      });
+    } catch (error) {
+      setSubmitStatus({
+        success: false,
+        message: error.message || "Failed to book appointment",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="self-stretch bg-black-50 inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:p-24">
       <div className=" flex flex-col justify-start items-center gap-5">
@@ -43,7 +121,12 @@ const MainForm = () => {
 
           {/* form start here */}
 
-          <form className="w-full flex-1 self-stretch p-2.5 inline-flex flex-col justify-start items-start gap-2.5 lg:gap-5 overflow-hidden">
+          <form onSubmit={handleSubmit} className="w-full flex-1 self-stretch p-2.5 inline-flex flex-col justify-start items-start gap-2.5 lg:gap-5 overflow-hidden">
+            {submitStatus && (
+              <div className={`self-stretch p-3 rounded-xl ${submitStatus.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                {submitStatus.message}
+              </div>
+            )}
             <div className="self-stretch flex flex-col justify-start items-start lg:gap-3 gap-1">
               <div className="w-full flex flex-col lg:flex-row gap-2">
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
@@ -54,6 +137,9 @@ const MainForm = () => {
                     className="self-stretch  px-2.5 py-4 lg:px-5 lg:py-4 bg-black-50 rounded-xl flex flex-col justify-start items-start gap-2.5 overflow-hidden text-xs lg:text-base"
                     required
                     placeholder="First Name"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
@@ -63,6 +149,9 @@ const MainForm = () => {
                   <input
                     className="self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 rounded-xl flex flex-col justify-start items-start gap-2.5 overflow-hidden text-xs lg:text-base"
                     placeholder="Last Name"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
@@ -70,11 +159,20 @@ const MainForm = () => {
                 <label className="justify-start text-black-950 text-xl font-medium font-['Switzer_Variable']">
                   Specialty
                 </label>
-                <select className="self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 text-black-500 rounded-xl inline-flex justify-between items-center overflow-hidden">
-                  <option value="default">Choose an option</option>
-                  <option value="default">default</option>
-                  <option value="default">default</option>
-                  <option value="default">default</option>
+                <select 
+                  className="self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 text-black-500 rounded-xl inline-flex justify-between items-center overflow-hidden"
+                  name="specialty"
+                  value={formData.specialty}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Choose an option</option>
+                  <option value="General Medicine">General Medicine</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Pediatrics">Pediatrics</option>
+                  <option value="Orthopedics">Orthopedics</option>
+                  <option value="Gynecology">Gynecology</option>
+                  <option value="Neurology">Neurology</option>
                 </select>
               </div>
               <div className="self-stretch inline-flex justify-center items-center overflow-hidden">
@@ -86,6 +184,10 @@ const MainForm = () => {
                     className="w-full self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 rounded-xl inline-flex justify-between items-center overflow-hidden"
                     type="date"
                     placeholder="Choose a date"
+                    name="date"
+                    value={formData.date}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
@@ -96,6 +198,10 @@ const MainForm = () => {
                     className="self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 rounded-xl inline-flex justify-between items-center overflow-hidden"
                     type="time"
                     placeholder="Choose a time"
+                    name="time"
+                    value={formData.time}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
               </div>
@@ -107,9 +213,11 @@ const MainForm = () => {
                   <select
                     name="countryCode"
                     className="w-24 px-4 py-4 bg-black-50 text-black-500 rounded-xl"
+                    value={formData.countryCode}
+                    onChange={handleChange}
                     required
                   >
-                    <option defaultValue="+91">+91</option>
+                    <option value="+91">+91</option>
                     <option value="+1">+1</option>
                     <option value="+44">+44</option>
                     <option value="+61">+61</option>
@@ -118,9 +226,10 @@ const MainForm = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="123-45-678"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    placeholder="1234567890"
                     className="flex px-5 py-4 w-full bg-black-50 text-black-500 rounded-xl"
+                    value={formData.phone}
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -133,6 +242,10 @@ const MainForm = () => {
                   className="self-stretch px-5 py-4 bg-black-50 rounded-xl inline-flex justify-start items-center gap-2.5 overflow-hidden"
                   type="email"
                   placeholder="example@email.com"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                 />
               </div>
             </div>
@@ -140,8 +253,9 @@ const MainForm = () => {
               <button
                 type="submit"
                 className="w-full px-7 py-4 bg-primary-800 rounded-[32px] text-white text-xl font-medium font-['Switzer_Variable']"
+                disabled={isSubmitting}
               >
-                Book Your Slot
+                {isSubmitting ? "Booking..." : "Book Your Slot"}
               </button>
             </div>
           </form>
