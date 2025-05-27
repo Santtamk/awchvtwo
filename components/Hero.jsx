@@ -53,7 +53,7 @@ const Hero_1 = () => {
           <button
             data-icon="true"
             data-property-1="Default"
-            className="px-7 py-4 bg-primary-800 rounded-[32px] flex justify-center items-center gap-2.5 overflow-hidden"
+            className="px-7 py-4 bg-primary-800 rounded-[32px] flex justify-center items-center gap-2.5 overflow-hidden cursor-pointer"
             onClick={() => {
               const section = document.getElementById("book_appointment");
               section?.scrollIntoView({ behavior: "smooth" });
@@ -77,7 +77,8 @@ const Hero_1 = () => {
           <button
             data-icon="true"
             data-property-1="Default"
-            className="size- px-7 py-4 rounded-[32px]  outline-1 outline-offset-[-1px] outline-primary-700 flex justify-center items-center gap-2.5 overflow-hidden"
+            className="size- px-7 py-4 rounded-[32px]  outline-1 outline-offset-[-1px] outline-primary-700 flex justify-center items-center gap-2.5 overflow-hidden cursor-pointer
+"
           >
             <div className="justify-start text-primary-700 text-xl font-medium font-switzer">
               Explore Services
@@ -99,12 +100,12 @@ const Hero_1 = () => {
         <div className="size-[500px] left-0 top-[75px] absolute bg-radial from-primary-200 to-black-50 rounded-full blur-[50px]" />
 
         <Image
-          src="/hero.svg"
+          src="/hero27.webp"
           alt="hero image"
           width={500}
           height={650}
           className="rounded-[32px] relative"
-          priority
+          priority={true}
         />
       </div>
     </div>

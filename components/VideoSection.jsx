@@ -58,7 +58,8 @@ const VideoSection = () => {
       <div className=" inline-flex justify-center items-center gap-5">
         {/* Left arrow */}
         <button
-          className=" p-3.5 lg:p-5 bg-primary-800 rounded-full inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden cursor-pointer"
+          className="cursor-pointer
+ p-3.5 lg:p-5 bg-primary-800 rounded-full inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden cursor-pointer"
           onClick={handlePrev}
         >
           <Image
@@ -93,7 +94,8 @@ const VideoSection = () => {
             {/* Custom Play/Pause Button */}
             <button
               onClick={() => togglePlay(index)}
-              className="absolute flex justify-center items-center content-center  cursor-pointer  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-black/40 p-3 rounded-full"
+              className=" cursor-pointer
+ absolute flex justify-center items-center content-center  cursor-pointer  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-black/40 p-3 rounded-full"
             >
               <Image
                 src={isPlaying ? "/pause_icon.png" : "/playButton.svg"}
@@ -106,7 +108,8 @@ const VideoSection = () => {
         </div>
         {/* Right arrow */}
         <button
-          className="p-3.5 lg:p-5 bg-primary-800 rounded-full inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden cursor-pointer"
+          className=" cursor-pointer
+ p-3.5 lg:p-5 bg-primary-800 rounded-full inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden cursor-pointer"
           onClick={handleNext}
         >
           <Image

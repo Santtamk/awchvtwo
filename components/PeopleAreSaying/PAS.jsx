@@ -57,7 +57,8 @@ const PAS = () => {
         </div>
         <div className="inline-flex justify-center items-center lg:gap-2.5 overflow-hidden">
           <button
-            className=" p-3.5 lg:p-5 bg-primary-800 rounded-full inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden cursor-pointer "
+            className="cursor-pointer
+ p-3.5 lg:p-5 bg-primary-800 rounded-full inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden cursor-pointer "
             onClick={prev}
           >
             <Image
@@ -95,7 +96,8 @@ const PAS = () => {
             </div>
           </div>
           <button
-            className=" p-3.5 lg:p-5 bg-primary-800 rounded-full inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden cursor-pointer"
+            className="cursor-pointer
+ p-3.5 lg:p-5 bg-primary-800 rounded-full inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden cursor-pointer"
             onClick={next}
           >
             <Image

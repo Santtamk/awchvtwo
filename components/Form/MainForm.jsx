@@ -90,17 +90,17 @@ const MainForm = () => {
             </div>
           </div>
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-700 text-base lg:text-xl font-normal font-['Switzer_Variable']">
+            <div className="self-stretch text-center justify-start text-black-700 text-base lg:text-xl font-normal font-switzer">
               Whether it's a routine check-up or a specialist consultation, our
               team is here to support your health journey with compassion and
               expertise.
             </div>
           </div>
         </div>
-        <div className=" bg-primary-100 rounded-[32px] inline-flex justify-center items-center gap-2.5 overflow-hidden flex-col-reverse lg:flex-row">
-          <div className="flex-1 self-stretch p-2.5 inline-flex flex-col justify-center items-center content-center gap-2.5 overflow-hidden">
+        <div className=" bg-primary-100 rounded-[32px] inline-flex justify-center items-center gap-2.5 overflow-hidden flex-col-reverse lg:flex-row p-[0.625rem]">
+          <div className="flex-1 self-stretch p-2.5  inline-flex flex-col justify-center items-center content-center gap-5 overflow-hidden ">
             <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-              <div className="self-stretch justify-start text-primary-700 text-2xl lg:text-5xl font-medium font-sora">
+              <div className="self-stretch justify-start text-primary-700 text-2xl lg:text-4xl font-medium font-sora tracking-wide">
                 Book your appointment online in just a few clicks and take the
                 first step toward better health today.
               </div>
@@ -124,7 +124,7 @@ const MainForm = () => {
           <form
             onSubmit={handleSubmit}
             className="w-full flex-1 self-stretch p-2.5 inline-flex flex-col justify-start items-start gap-2.5 lg:gap-5 overflow-hidden"
-            id='book_appointment'
+            id="book_appointment"
           >
             {submitStatus && (
               <div
@@ -137,14 +137,14 @@ const MainForm = () => {
                 {submitStatus.message}
               </div>
             )}
-            <div className="self-stretch flex flex-col justify-start items-start lg:gap-3 gap-1">
-              <div className="w-full flex flex-col lg:flex-row gap-2">
+            <div className="self-stretch flex flex-col justify-start items-start lg:gap-3 gap-1 font-switzer">
+              <div className="w-full flex flex-col lg:flex-row gap-2 font-switzer">
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <label className="justify-start text-black-950 text-base lg:text-xl font-medium font-['Switzer_Variable']">
+                  <label className="justify-start text-black-950 text-base lg:text-xl font-medium font-switzer">
                     First Name
                   </label>
                   <input
-                    className="self-stretch  px-2.5 py-4 lg:px-5 lg:py-4 bg-black-50 rounded-xl flex flex-col justify-start items-start gap-2.5 overflow-hidden text-xs lg:text-base"
+                    className="self-stretch  px-2.5 py-4 lg:px-5 lg:py-4 bg-black-50 rounded-xl flex flex-col justify-start items-start gap-2.5 overflow-hidden text-xs lg:text-base font-switzer"
                     required
                     placeholder="First Name"
                     name="firstName"
@@ -153,7 +153,7 @@ const MainForm = () => {
                   />
                 </div>
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <label className="justify-start text-black-950 text-base lg:text-xl font-medium font-['Switzer_Variable']">
+                  <label className="justify-start text-black-950 text-base lg:text-xl font-medium font-switzer">
                     Last Name
                   </label>
                   <input
@@ -166,7 +166,7 @@ const MainForm = () => {
                 </div>
               </div>
               <div className="self-stretch p-2.5 flex flex-col justify-center items-start gap-3.5 overflow-hidden">
-                <label className="justify-start text-black-950 text-xl font-medium font-['Switzer_Variable']">
+                <label className="justify-start text-black-950 text-xl font-medium font-switzer">
                   Specialty
                 </label>
                 <select
@@ -187,7 +187,7 @@ const MainForm = () => {
               </div>
               <div className="self-stretch inline-flex justify-center items-center overflow-hidden">
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <label className="justify-start text-black-950 text-xl font-medium font-['Switzer_Variable']">
+                  <label className="justify-start text-black-950 text-xl font-medium font-switzer">
                     Date
                   </label>
                   <input
@@ -201,7 +201,7 @@ const MainForm = () => {
                   />
                 </div>
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <label className="justify-start text-black-950 text-xl font-medium font-['Switzer_Variable']">
+                  <label className="justify-start text-black-950 text-xl font-medium font-switzer">
                     Time
                   </label>
                   <input
@@ -216,7 +216,7 @@ const MainForm = () => {
                 </div>
               </div>
               <div className="self-stretch p-2.5 flex flex-col justify-center items-start gap-3.5 overflow-hidden">
-                <label className="justify-start text-black-950 text-xl font-medium font-['Switzer_Variable']">
+                <label className="justify-start text-black-950 text-xl font-medium font-switzer">
                   Mobile Number
                 </label>
                 <div className="self-stretch bg-black-50 text-black-500 rounded-xl inline-flex justify-between items-center overflow-hidden">
@@ -245,7 +245,7 @@ const MainForm = () => {
                 </div>
               </div>
               <div className="self-stretch p-2.5 flex flex-col justify-center items-start gap-3.5 overflow-hidden">
-                <label className="justify-start text-black-950 text-xl font-medium font-['Switzer_Variable']">
+                <label className="justify-start text-black-950 text-xl font-medium font-switzer">
                   Email
                 </label>
                 <input
@@ -262,7 +262,8 @@ const MainForm = () => {
             <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
               <button
                 type="submit"
-                className="w-full px-7 py-4 bg-primary-800 rounded-[32px] text-white text-xl font-medium font-['Switzer_Variable']"
+                className=" cursor-pointer
+ w-full px-7 py-4 bg-primary-800 rounded-[32px] text-white text-xl font-medium font-switzer"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Booking..." : "Book Your Slot"}
