@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`antialiased ${sora.variable} bg-black-50`}>
         <Navbar />
-        <main className="max-w-[1280px] mx-auto">{children}</main>
+        <main className="max-w-[1440px] mx-auto">{children}</main>
         <Footer />
       </body>
     </html>

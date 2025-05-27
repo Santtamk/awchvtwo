@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="list-none flex flex-col gap-[1rem]">
           <div className="w-[4.25rem] h-[0.8125rem] md:w-[9.4375rem] md:h-[1.875rem]">
             <Image
-              src="/footer.svg"
+              src="/footer_image.webp"
               alt="navbar_logo"
               width={0}
               height={0}

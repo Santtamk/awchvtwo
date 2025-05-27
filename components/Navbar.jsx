@@ -8,12 +8,13 @@ const Navbar = () => {
         <li>
           <div className="w-[4.25rem] h-[0.8125rem] md:w-[9.4375rem] md:h-[1.875rem]">
             <Image
-              src="/logo101.svg"
+              src="/nav_image.webp"
               alt="navbar_logo"
               width={0}
               height={0}
               sizes="100vw"
               className="w-full h-auto"
+              priority={true}
             />
           </div>
         </li>
@@ -27,11 +28,17 @@ const Navbar = () => {
       </ul>
 
       <ul className="list-none flex gap-1 items-center justify-center md:gap-7">
-        <li className="text-primary-800 hidden md:block text-[0.9375rem]  font-switzer md:text-[1.375rem] md:font-medium">
+        <li
+          className="text-primary-800 hidden md:block text-[0.9375rem]  font-switzer md:text-[1.375rem] md:font-medium cursor-pointer
+"
+        >
           Our Doctors
         </li>
         <li>
-          <button className="text-white bg-primary-800 font-medium rounded-4xl text-[0.9375rem] py-[0.75rem] px-[0.9375rem] font-switzer flex gap-[0.3125rem] items-center justify-center md:py-[1.125rem] md:px-[1.75rem] ">
+          <button
+            className="text-white bg-primary-800 font-medium rounded-4xl text-[0.9375rem] py-[0.75rem] cursor-pointer
+ px-[0.9375rem] font-switzer flex gap-[0.3125rem] items-center justify-center md:py-[1.125rem] md:px-[1.75rem] "
+          >
             <div className="">Call to Book a Session</div>
             <div className="w-[0.9375rem] h-[0.9375rem]">
               <Image
