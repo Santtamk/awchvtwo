@@ -5,15 +5,21 @@ const Footer = () => {
   return (
     <div className="w-full bg-pink-950 lg:px-25 p-5 flex justify-between ">
       <div className="flex  gap-4 justify-between items-start  flex-col lg:w-1/2 ">
-        <div className="w-[4.25rem] h-[0.8125rem] md:w-[9.4375rem] md:h-[1.875rem]">
-          <Image
-            src="/Logo_white.svg"
-            alt="navbar_logo"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full h-auto"
-          />
+        <div className="list-none flex flex-col gap-[1rem]">
+          <div className="w-[4.25rem] h-[0.8125rem] md:w-[9.4375rem] md:h-[1.875rem]">
+            <Image
+              src="/footer.svg"
+              alt="navbar_logo"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto"
+            />
+          </div>
+
+          <p className="text-black-50 font-normal text-[0.312rem] font-switzer md:text-[0.8125rem] md:font-normal">
+            Compassion, Care, Commitment
+          </p>
         </div>
 
         <div className=" flex flex-col justify-start items-start overflow-hidden">
@@ -41,7 +47,7 @@ const Footer = () => {
           <div className="size- p-1 lg:p-2.5 bg-primary-50 rounded-xl inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="size-4 lg:size-6 relative overflow-hidden">
               <Image
-              alt="instagram"
+                alt="instagram"
                 width={0}
                 height={0}
                 src="/social/instagram.svg"
@@ -52,7 +58,7 @@ const Footer = () => {
           <div className="size-  p-1 lg:p-2.5 bg-primary-50 rounded-xl inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="size-4 lg:size-6 relative overflow-hidden">
               <Image
-              alt="facebook"
+                alt="facebook"
                 width={0}
                 height={0}
                 src="/social/facebook.svg"
@@ -63,7 +69,7 @@ const Footer = () => {
           <div className="size-  p-1 lg:p-2.5 bg-primary-50 rounded-xl inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="size-4 lg:size-6 relative overflow-hidden">
               <Image
-              alt="x"
+                alt="x"
                 width={0}
                 height={0}
                 src="/social/x.svg"

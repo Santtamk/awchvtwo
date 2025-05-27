@@ -35,7 +35,7 @@ const section2 = [
 
 const CoreServices = () => {
   return (
-    <div className="self-stretch p-12 bg-black-50 inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+    <div className="self-stretch p-12  inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden">
       <div className=" flex flex-col justify-start items-center gap-5">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
