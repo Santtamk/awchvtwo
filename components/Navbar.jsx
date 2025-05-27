@@ -4,11 +4,11 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="flex p-2.5 justify-between items-center gap-2  md:pt-5 md:px-7 lg:p-5 lg:px-25">
-      <ul className="list-none flex flex-col gap-[0.5rem] ">
+      <ul className="list-none flex flex-col gap-[1rem] ">
         <li>
           <div className="w-[4.25rem] h-[0.8125rem] md:w-[9.4375rem] md:h-[1.875rem]">
             <Image
-              src="/logo01.png"
+              src="/logo101.svg"
               alt="navbar_logo"
               width={0}
               height={0}

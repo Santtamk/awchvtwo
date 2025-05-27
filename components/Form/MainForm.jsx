@@ -81,7 +81,7 @@ const MainForm = () => {
   };
 
   return (
-    <div className="self-stretch bg-black-50 inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:p-24">
+    <div className="self-stretch inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:p-24">
       <div className=" flex flex-col justify-start items-center gap-5">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
@@ -100,7 +100,7 @@ const MainForm = () => {
         <div className=" bg-primary-100 rounded-[32px] inline-flex justify-center items-center gap-2.5 overflow-hidden flex-col-reverse lg:flex-row">
           <div className="flex-1 self-stretch p-2.5 inline-flex flex-col justify-center items-center content-center gap-2.5 overflow-hidden">
             <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-              <div className="self-stretch justify-start text-primary-700 text-5xl font-medium font-sora">
+              <div className="self-stretch justify-start text-primary-700 text-2xl lg:text-5xl font-medium font-sora">
                 Book your appointment online in just a few clicks and take the
                 first step toward better health today.
               </div>
@@ -121,9 +121,19 @@ const MainForm = () => {
 
           {/* form start here */}
 
-          <form onSubmit={handleSubmit} className="w-full flex-1 self-stretch p-2.5 inline-flex flex-col justify-start items-start gap-2.5 lg:gap-5 overflow-hidden">
+          <form
+            onSubmit={handleSubmit}
+            className="w-full flex-1 self-stretch p-2.5 inline-flex flex-col justify-start items-start gap-2.5 lg:gap-5 overflow-hidden"
+            id='book_appointment'
+          >
             {submitStatus && (
-              <div className={`self-stretch p-3 rounded-xl ${submitStatus.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+              <div
+                className={`self-stretch p-3 rounded-xl ${
+                  submitStatus.success
+                    ? "bg-green-100 text-green-800"
+                    : "bg-red-100 text-red-800"
+                }`}
+              >
                 {submitStatus.message}
               </div>
             )}
@@ -159,8 +169,8 @@ const MainForm = () => {
                 <label className="justify-start text-black-950 text-xl font-medium font-['Switzer_Variable']">
                   Specialty
                 </label>
-                <select 
-                  className="self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 text-black-500 rounded-xl inline-flex justify-between items-center overflow-hidden"
+                <select
+                  className="self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 text-black-500 rounded-xl inline-flex justify-between items-center overflow-hidden text-xs lg:text-base"
                   name="specialty"
                   value={formData.specialty}
                   onChange={handleChange}
@@ -181,7 +191,7 @@ const MainForm = () => {
                     Date
                   </label>
                   <input
-                    className="w-full self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 rounded-xl inline-flex justify-between items-center overflow-hidden"
+                    className="w-full self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 rounded-xl inline-flex justify-between items-center overflow-hidden text-xs lg:text-base text-black-500"
                     type="date"
                     placeholder="Choose a date"
                     name="date"
@@ -195,7 +205,7 @@ const MainForm = () => {
                     Time
                   </label>
                   <input
-                    className="self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 rounded-xl inline-flex justify-between items-center overflow-hidden"
+                    className="self-stretch lg:px-5 lg:py-4 px-2.5 py-4  bg-black-50 rounded-xl inline-flex justify-between items-center overflow-hidden text-xs lg:text-base text-black-500"
                     type="time"
                     placeholder="Choose a time"
                     name="time"
@@ -212,7 +222,7 @@ const MainForm = () => {
                 <div className="self-stretch bg-black-50 text-black-500 rounded-xl inline-flex justify-between items-center overflow-hidden">
                   <select
                     name="countryCode"
-                    className="w-24 px-4 py-4 bg-black-50 text-black-500 rounded-xl"
+                    className="w-24 px-4 py-4 bg-black-50  rounded-xl text-xs lg:text-base text-black-500"
                     value={formData.countryCode}
                     onChange={handleChange}
                     required
@@ -227,7 +237,7 @@ const MainForm = () => {
                     type="tel"
                     name="phone"
                     placeholder="1234567890"
-                    className="flex px-5 py-4 w-full bg-black-50 text-black-500 rounded-xl"
+                    className="flex px-5 py-4 w-full bg-black-50 rounded-xl text-xs lg:text-base text-black-500"
                     value={formData.phone}
                     onChange={handleChange}
                     required
@@ -239,7 +249,7 @@ const MainForm = () => {
                   Email
                 </label>
                 <input
-                  className="self-stretch px-5 py-4 bg-black-50 rounded-xl inline-flex justify-start items-center gap-2.5 overflow-hidden"
+                  className="self-stretch px-5 py-4 bg-black-50 rounded-xl inline-flex justify-start items-center gap-2.5 overflow-hidden text-xs lg:text-base text-black-500"
                   type="email"
                   placeholder="example@email.com"
                   name="email"

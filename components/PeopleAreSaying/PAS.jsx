@@ -41,8 +41,8 @@ const PAS = () => {
   const current = testimonials[currentIndex];
 
   return (
-    <div className="self-stretch bg-black-50 inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:p-25">
-      <div className=" flex flex-col justify-start items-center gap-5 ">
+    <div className="self-stretch  inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:p-25">
+      <div className=" flex flex-col justify-start items-center lg:gap-5 ">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold font-sora tracking-wide">
@@ -65,7 +65,7 @@ const PAS = () => {
               alt="arrow"
               width={24}
               height={24}
-              className="w-6"
+              className="w-16"
             />
           </button>
 
@@ -103,7 +103,7 @@ const PAS = () => {
               alt="arrow"
               width={0}
               height={0}
-              className="w-6"
+              className=" w-16"
             />
           </button>
         </div>

@@ -14,7 +14,7 @@ const VideoSection = () => {
   const playCurrentVideo = () => {
     if (videoRef.current) {
       videoRef.current.load(); // reset
-      // videoRef.current.play(); // autoplay
+      videoRef.current.play(); // autoplay
       setIsPlaying(true);
     }
   };
@@ -41,7 +41,7 @@ const VideoSection = () => {
   const togglePlay = () => {
     if (!videoRef.current) return;
     if (videoRef.current.paused) {
-      // videoRef.current.play();
+      videoRef.current.play();
       setIsPlaying(true);
     } else {
       videoRef.current.pause();
@@ -54,7 +54,7 @@ const VideoSection = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full self-stretch p-12 bg-black-50 inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:px-25 ">
+    <div className="w-full self-stretch p-12  inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:px-25 ">
       <div className=" inline-flex justify-center items-center gap-5">
         {/* Left arrow */}
         <button
@@ -78,11 +78,11 @@ const VideoSection = () => {
 
           "
           > */}
-          <div className="relative w-full max-w-6xl mx-auto aspect-video sm:aspect-video h-[250px] sm:h-auto bg-black-200 rounded-[16px] overflow-hidden">
+          <div className="relative w-full max-w-6xl mx-auto aspect-video sm:aspect-video h-[250px] sm:h-auto rounded-[16px] overflow-hidden">
             <video
               key={currentIndex}
               ref={videoRef}
-              className={`w-full h-auto object-cover transition-opacity duration-300 rounded-[32px] ${
+              className={` object-cover transition-opacity duration-300 rounded-[32px] ${
                 fade ? "opacity-100" : "opacity-0"
               } object-cover`}
               playsInline
@@ -92,7 +92,7 @@ const VideoSection = () => {
             </video>
             {/* Custom Play/Pause Button */}
             <button
-              onClick={togglePlay}
+              onClick={() => togglePlay(index)}
               className="absolute flex justify-center items-center content-center  cursor-pointer  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-black/40 p-3 rounded-full"
             >
               <Image
