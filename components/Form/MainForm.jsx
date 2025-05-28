@@ -88,7 +88,17 @@ const MainForm = () => {
   };
 
   return (
-    <div className="self-stretch inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:p-24">
+    <div
+      className="self-stretch inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:p-24 
+     "
+    >
+      {/* bg image */}
+
+      {/* <div
+        className="absolute inset-0 bg-cover bg-center opacity-[0.2]"
+        style={{ backgroundImage: "url('form_image.svg')" }}
+      ></div> */}
+
       <div className=" flex flex-col justify-start items-center gap-5">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
@@ -104,7 +114,11 @@ const MainForm = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-primary-100 rounded-[32px] inline-flex justify-center items-center gap-2.5 overflow-hidden flex-col-reverse lg:flex-row p-[0.625rem]">
+
+        <div
+          className=" bg-primary-100 rounded-[32px] inline-flex justify-center items-center gap-2.5 overflow-hidden flex-col-reverse lg:flex-row p-[0.625rem] bg-contain  bg-left bg-repeat-y"
+          style={{ backgroundImage: "url('form_image.svg')" }}
+        >
           <div className="flex-1 self-stretch p-2.5  inline-flex flex-col justify-center items-center content-center gap-5 overflow-hidden ">
             <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
               <div className="self-stretch justify-start text-primary-700 text-2xl lg:text-4xl font-medium font-sora tracking-wide">
