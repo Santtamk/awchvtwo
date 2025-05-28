@@ -12,7 +12,7 @@ const ServiceCard = ({ title, gradient, image }) => {
         backgroundPosition: "center",
       }}
     >
-      {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" /> */}
+      
       <div className="z-10 self-stretch p-5 flex flex-col justify-start items-start gap-2 overflow-hidden">
         <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
           <div className="self-stretch justify-start text-black-50 text-3xl font-medium font-['Switzer_Variable']">

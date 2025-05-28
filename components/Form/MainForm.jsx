@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const MainForm = () => {
   const [formData, setFormData] = useState({
@@ -41,13 +42,17 @@ const MainForm = () => {
           Phone: ${formData.countryCode}${formData.phone}`,
       };
 
-      const response = await fetch("http://localhost:5000/api/submissions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(submissionData),
-      });
+      // const response = await fetch("http://localhost:5000/api/submissions", {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/submissions`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(submissionData),
+        }
+      );
 
       const data = await response.json();
 
@@ -59,6 +64,7 @@ const MainForm = () => {
         success: true,
         message: "Appointment booked successfully!",
       });
+      toast.success("Appointment booked successfully!");
       // Reset form
       setFormData({
         firstName: "",
@@ -75,6 +81,7 @@ const MainForm = () => {
         success: false,
         message: error.message || "Failed to book appointment",
       });
+      toast.error("Failed to book appointment");
     } finally {
       setIsSubmitting(false);
     }
@@ -236,11 +243,14 @@ const MainForm = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="1234567890"
                     className="flex px-5 py-4 w-full bg-black-50 rounded-xl text-xs lg:text-base text-black-500"
                     value={formData.phone}
                     onChange={handleChange}
                     required
+                    id="phone"
+                    placeholder="XXX-XXX-XXX"
+                    pattern="[0-9]{10}"
+                    title="Please add a ten digit mobile number in the format 1234567890"
                   />
                 </div>
               </div>

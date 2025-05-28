@@ -3,6 +3,8 @@ import "../styles/switzer.css";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Sora } from "next/font/google";
+import { Toaster } from "react-hot-toast";
+
 
 export const metadata = {
   title: "AWCH",
@@ -23,7 +25,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`antialiased ${sora.variable} bg-black-50`}>
         <Navbar />
-        <main className="max-w-[1440px] mx-auto">{children}</main>
+        <main className="max-w-[1440px] mx-auto">
+          <Toaster position="bottom-center" />
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
