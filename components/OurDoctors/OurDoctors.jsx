@@ -41,20 +41,11 @@ const OurDoctors = () => {
           </div>
         </div>
 
-        <div className="self-stretch p-2.5  justify-center items-start gap-5 overflow-hidden flex-wrap grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-4">
+        <div className="self-stretch px-2.5 py-10  justify-center items-start gap-5 overflow-hidden flex-wrap grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-4">
           {doctors.map((doctor, index) => (
-            // <div
-            //   key={index}
-            //   className={`flex-1 min-w-[250px] lg:h-[500px] h-80 bg-gradient-to-bl ${doctor.bgGradient} rounded-3xl inline-flex flex-col justify-end items-start overflow-hidden`}
-            //   style={{
-            //     backgroundImage: `url(${doctor.image})`,
-            //     backgroundSize: "cover",
-            //     backgroundPosition: "center",
-            //   }}
-            // >
             <div
               key={index}
-              className="relative flex-1 min-w-[250px] lg:h-[500px] h-80 rounded-3xl overflow-hidden"
+              className="relative flex-1 min-w-[250px] lg:h-[500px] h-80 rounded-3xl overflow-hidden group transition-transform duration-200 hover:scale-[1.015] hover:shadow-xl"
             >
               {/* Background Image */}
               <div
@@ -67,13 +58,6 @@ const OurDoctors = () => {
                 className={`absolute inset-0 bg-gradient-to-bl ${doctor.bgGradient}`}
               ></div>
 
-              {/* <div className="self-stretch p-5 flex flex-col justify-start items-start gap-2 overflow-hidden z-10">
-                <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <div className="self-stretch justify-start text-black-50  text-xl lg:text-3xl font-medium font-['Switzer_Variable']">
-                    {doctor.name}
-                  </div>
-                </div>
-              </div> */}
               <div className="absolute bottom-0 w-full p-5 z-10">
                 <div className="text-black-50 text-xl lg:text-3xl font-medium font-['Switzer_Variable']">
                   {doctor.name}

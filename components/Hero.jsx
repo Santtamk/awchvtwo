@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Hero_1 = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="flex justify-center items-start lg:content-center  lg:px-25 lg:items-center lg:justify-center p-[0.625rem]">
       <div className="flex-1 p-2.5 flex flex-col justify-start items-start gap-4  lg:items-center lg:justify-center">
@@ -53,7 +55,7 @@ const Hero_1 = () => {
           <button
             data-icon="true"
             data-property-1="Default"
-            className="px-7 py-4 bg-primary-800 rounded-[32px] flex justify-center items-center gap-2.5 overflow-hidden cursor-pointer"
+            className="px-7 py-4 bg-primary-800 rounded-[32px] flex justify-center items-center gap-2.5 overflow-hidden cursor-pointer hover:bg-primary-900 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-600"
             onClick={() => {
               const section = document.getElementById("book_appointment");
               section?.scrollIntoView({ behavior: "smooth" });
@@ -75,23 +77,23 @@ const Hero_1 = () => {
             </div>
           </button>
           <button
-            data-icon="true"
-            data-property-1="Default"
-            className="size- px-7 py-4 rounded-[32px]  outline-1 outline-offset-[-1px] outline-primary-700 flex justify-center items-center gap-2.5 overflow-hidden cursor-pointer
-"
+            className="size- px-7 text-primary-700 py-4 rounded-[32px]  outline-1 outline-offset-[-1px] outline-primary-700 flex justify-center items-center gap-2.5 overflow-hidden cursor-pointer hover:bg-primary-900 hover:text-black-50 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-600 "
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="justify-start text-primary-700 text-xl font-medium font-switzer">
+            <div className="justify-start  text-xl font-medium font-switzer">
               Explore Services
             </div>
-            <div className="size-4 lg:size-6 relative overflow-hidden">
+            <div className="size-4 lg:size-6 relative overflow-hidden ">
               <Image
-                src="/remix.svg"
+                src={isHovered ? "/remix_white.svg" : "/remix.svg"}
                 alt="remix"
                 width={0}
                 height={0}
                 sizes="100vw"
                 className="w-full h-auto"
               />
+              {/* Hover icon */}
             </div>
           </button>
         </div>
