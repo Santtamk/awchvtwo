@@ -263,7 +263,7 @@ const MainForm = () => {
               <button
                 type="submit"
                 className=" cursor-pointer
- w-full px-7 py-4 bg-primary-800 rounded-[32px] text-white text-xl font-medium font-switzer"
+ w-full px-7 py-4 bg-primary-800 rounded-[32px] text-white text-xl font-medium font-switzer hover:bg-primary-900 hover:text-black-50 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-600 "
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Booking..." : "Book Your Slot"}

@@ -31,7 +31,7 @@ const aboutUsCards = [
 const AboutUs = () => {
   return (
     <div className="self-stretch p-12  inline-flex flex-col justify-start items-center gap-5 overflow-hidden lg:px-25">
-      <div className=" flex flex-col justify-center items-center gap-5">
+      <div className=" flex flex-col justify-center items-center">
         <div className="self-stretch flex flex-col justify-start items-start gap-2.5">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold font-sora tracking-wide">
@@ -51,11 +51,11 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="self-stretch p-2.5 inline-flex justify-center items-center gap-5 overflow-hidden flex-col lg:flex-row">
-          <div className="self-stretch p-2.5 inline-flex justify-center items-center gap-5 overflow-hidden flex-col lg:flex-row flex-wrap">
+          <div className="self-stretch px-2.5 py-10 inline-flex justify-center items-center gap-5 overflow-hidden flex-col lg:flex-row flex-wrap">
             {aboutUsCards.map((card, idx) => (
               <div
                 key={idx}
-                className="flex-1 self-stretch p-5 bg-black-50 rounded-[32px]  outline-1 outline-offset-[-1px] outline-black-100 inline-flex flex-col justify-start items-start gap-3 overflow-hidden"
+                className="flex-1 self-stretch p-5 bg-black-50 rounded-[32px]  outline-1 outline-offset-[-1px] outline-black-100 inline-flex flex-col justify-start items-start gap-3 overflow-hidden hover:shadow-xl group transition-transform duration-500 hover:scale-[1.015]"
               >
                 <div className="size- p-5 bg-primary-800 rounded-[50px] flex flex-col justify-center items-center gap-2.5 overflow-hidden">
                   {card.icon && (

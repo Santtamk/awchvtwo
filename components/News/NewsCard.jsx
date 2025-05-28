@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export const NewsCard = ({ title, description, image }) => (
-  <div className="flex-1 self-stretch bg-black-50 rounded-3xl outline-1 outline-black-100 inline-flex flex-col justify-start items-center overflow-hidden">
+  <div className="flex-1 self-stretch bg-black-50 rounded-3xl outline-1 outline-black-100 inline-flex flex-col justify-start items-center overflow-hidden group transition-transform duration-200 hover:scale-[1.015] hover:shadow-xl">
     <img
       className="self-stretch h-72 relative object-cover"
       src={image}
@@ -26,7 +26,7 @@ export const NewsCard = ({ title, description, image }) => (
         </div>
         <div className="size-4 lg:size-6 relative">
           <Image
-          alt="arrow_outward"
+            alt="arrow_outward"
             src="/arrow_outward.svg"
             width={24}
             height={24}
