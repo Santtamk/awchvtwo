@@ -6,20 +6,20 @@ const newsItems = [
     title: "What to Expect During Pregnancy",
     description:
       "From trimester milestones to emotional ups and downs — here's a guide to help you feel informed, prepared, and supported every step of the way.",
-    image: "/News/pregnant-woman-sits-couch-with-blue-pillows.jpg",
+    image: "/News/pregnant-woman-sits-couch-with-blue-pillows.webp",
   },
   {
     title: "Why Vaccines Matter",
     description:
       "Vaccines don’t just protect individuals — they safeguard entire communities. Learn how timely immunization can make all the difference.",
     image:
-      "/News/power-prevention-how-routine-screenings-vaccinations-can-save-lives.jpg",
+      "/News/power-prevention-how-routine-screenings-vaccinations-can-save-lives.webp",
   },
   {
     title: "Family Health: Building Healthy Habits Together",
     description:
       "Practical tips to encourage well-being across generations from kids to grandparents.",
-    image: "/News/families-with-young-children.jpg",
+    image: "/News/families-with-young-children.webp",
   },
 ];
 

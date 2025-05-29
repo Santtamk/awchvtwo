@@ -4,22 +4,22 @@ const doctors = [
   {
     name: "Evelyn Wright, M.D.",
     bgGradient: "from-black/0 to-black/30",
-    image: "/Doctors/Doctor1.png",
+    image: "/Doctors/Doctor1.webp",
   },
   {
     name: "Blake Shaw, M.D.",
     bgGradient: "from-black/5 to-black/20",
-    image: "/Doctors/Doctor2.png",
+    image: "/Doctors/Doctor2.webp",
   },
   {
     name: "Jenna Cadwell, M.D.",
     bgGradient: "from-black/5 to-black/20",
-    image: "/Doctors/Doctor3.png",
+    image: "/Doctors/Doctor3.webp",
   },
   {
     name: "David Wayne, M.D.",
     bgGradient: "from-black/5 to-black/20",
-    image: "/Doctors/Doctor4.png",
+    image: "/Doctors/Doctor4.webp",
   },
 ];
 
@@ -50,7 +50,9 @@ const OurDoctors = () => {
               {/* Background Image */}
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${doctor.image})` }}
+                style={{
+                  backgroundImage: `linear-gradient(to bottom left, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(${doctor.image})`,
+                }}
               ></div>
 
               {/* Gradient Overlay */}
