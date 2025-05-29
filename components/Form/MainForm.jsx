@@ -42,7 +42,6 @@ const MainForm = () => {
           Phone: ${formData.countryCode}${formData.phone}`,
       };
 
-      // const response = await fetch("http://localhost:5000/api/submissions", {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/submissions`,
         {
@@ -89,7 +88,7 @@ const MainForm = () => {
 
   return (
     <div
-      className="self-stretch inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:p-24 
+      className="self-stretch inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden lg:px-24 lg:py-10 
      "
     >
       {/* bg image */}
@@ -116,7 +115,7 @@ const MainForm = () => {
         </div>
 
         <div
-          className=" bg-primary-100 rounded-[32px] inline-flex justify-center items-center gap-2.5 overflow-hidden flex-col-reverse lg:flex-row p-[0.625rem] bg-contain  bg-left bg-repeat-y"
+          className=" bg-primary-100 rounded-[32px] inline-flex justify-center items-center gap-2.5 overflow-hidden flex-col-reverse lg:flex-row p-[0.625rem] bg-cover lg:bg-contain  bg-left bg-no-repeat"
           style={{ backgroundImage: "url('form_image.svg')" }}
         >
           <div className="flex-1 self-stretch p-2.5  inline-flex flex-col justify-center items-center content-center gap-5 overflow-hidden ">
@@ -129,12 +128,12 @@ const MainForm = () => {
             <div className="self-stretch flex-1 p-2.5  rounded-3xl overflow-hidden">
               <iframe
                 width="100%"
-                height="440"
+                height="auto"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-3xl w-full h-[440px]"
+                className="rounded-3xl w-full  h-[15.625rem] lg:h-full"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27783.883082850258!2d86.96112987585762!3d23.684148679443517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71f0ea1022529%3A0xf888f7e7fd11cefe!2sAsansol%2C%20West%20Bengal!5e1!3m2!1sen!2sin!4v1747991543573!5m2!1sen!2sin"
               ></iframe>
             </div>

@@ -4,39 +4,39 @@ import ServiceCard from "./ServiceCard";
 const section1 = [
   {
     title: "General Medicine & Family Care",
-    gradient: "from-black/0 to-black/30",
-    image: "/Services/section1/General.png",
+
+    image: "/Services/section1/General.webp",
   },
   {
     title: "Specialist Consultations",
-    gradient: "from-black/5 to-black/20",
-    image: "/Services/section1/Specialist.png",
+
+    image: "/Services/section1/Specialist.webp",
   },
   {
     title: "Diagnostics & Lab Services",
-    gradient: "from-black/5 to-black/20",
-    image: "/Services/section1/Diagnostics.png",
+
+    image: "/Services/section1/Diagnostics.webp",
   },
 ];
 
 const section2 = [
   {
     title: "Women’s health",
-    gradient: "from-black/0 to-black/30",
-    image: "/Services/section2/happy-woman-standing-showing-biceps.jpg",
+
+    image: "/Services/section2/happy-woman-standing-showing-biceps.webp",
   },
   {
     title: "Child Health",
-    gradient: "from-black/5 to-black/20",
+
     image:
-      "/Services/section2/pediatric-doctor-comforting-child-patient-checkup-warm-colorful-clinic.jpg",
+      "/Services/section2/pediatric-doctor-comforting-child-patient-checkup-warm-colorful-clinic.webp",
   },
 ];
 
 const CoreServices = () => {
   return (
     <div className="self-stretch p-12  inline-flex flex-col justify-start items-center gap-2.5 overflow-hidden">
-      <div className=" flex flex-col justify-start items-center gap-5">
+      <div className=" flex flex-col justify-start items-center gap-3">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold font-sora tracking-wide">
@@ -57,7 +57,6 @@ const CoreServices = () => {
             <ServiceCard
               key={index}
               title={service.title}
-              gradient={service.gradient}
               image={service.image}
             />
           ))}
@@ -67,7 +66,6 @@ const CoreServices = () => {
             <ServiceCard
               key={index}
               title={service.title}
-              gradient={service.gradient}
               image={service.image}
             />
           ))}
