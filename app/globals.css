@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  font-family: var(--font-sora), sans-serif;
+  font-family: var(--font-inter), sans-serif;
 }
 @theme {
   --color-primary-950: #5d0035;
@@ -48,10 +47,10 @@
 
 @layer base {
   html {
-    font-family: var(--font-switzer), sans-serif;
+    font-family: var(--font-inter), sans-serif;
     scroll-behavior: smooth;
   }
   .font-sora {
-    font-family: var(--font-sora), sans-serif;
+    font-family: var(--font-inter), sans-serif;
   }
 }

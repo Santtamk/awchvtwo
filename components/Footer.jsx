@@ -14,16 +14,18 @@ const Footer = () => {
               height={0}
               sizes="100vw"
               className="w-full h-auto"
+              priority={false}
+              loading="lazy"
             />
           </div>
 
-          <p className="text-black-50 font-normal text-[0.312rem] font-switzer md:text-[0.8125rem] md:font-normal">
+          <p className="text-black-50 font-normal text-[0.312rem] md:text-[0.8125rem] md:font-normal">
             Compassion, Care, Commitment
           </p>
         </div>
 
         <div className=" flex flex-col justify-start items-start overflow-hidden">
-          <div className=" text-black-50 text-[8px] lg:text-lg font-medium font-['Switzer_Variable']">
+          <div className=" text-black-50 text-[8px] lg:text-lg font-medium">
             © 2025 AWCH. All rights reserved.
           </div>
         </div>
@@ -32,12 +34,12 @@ const Footer = () => {
         <div className="self-stretch inline-flex justify-between gap-5 overflow-hidden">
           <div className="size- flex justify-start items-start gap-2">
             <div className="size-  inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-              <div className="justify-start text-white text-[8px] lg:text-xl font-normal font-['Switzer_Variable']">
+              <div className="justify-start text-white text-[8px] lg:text-xl font-normal">
                 Privacy & Policy
               </div>
             </div>
             <div className="size- inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-              <div className="justify-start text-white text-[8px] lg:text-xl text-xl font-normal font-['Switzer_Variable']">
+              <div className="justify-start text-white text-[8px] lg:text-xl text-xl font-normal">
                 Terms & Condition
               </div>
             </div>
@@ -52,6 +54,8 @@ const Footer = () => {
                 height={0}
                 src="/social/instagram.svg"
                 className="w-4 lg:w-6"
+                priority={false}
+                loading="lazy"
               />
             </div>
           </div>
@@ -63,6 +67,8 @@ const Footer = () => {
                 height={0}
                 src="/social/facebook.svg"
                 className="w-4 lg:w-6"
+                priority={false}
+                loading="lazy"
               />
             </div>
           </div>
@@ -74,6 +80,8 @@ const Footer = () => {
                 height={0}
                 src="/social/x.svg"
                 className="w-4 lg:w-6"
+                priority={false}
+                loading="lazy"
               />
             </div>
           </div>

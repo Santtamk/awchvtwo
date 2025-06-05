@@ -53,10 +53,10 @@ const PAS = () => {
     <div className="w-full flex flex-col items-center justify-center content-center gap-4 lg:gap-6  px-4 lg:px-25 py-10">
       {/* Header texts */}
       <div className="flex flex-col items-center gap-3 lg:gap-5  text-center">
-        <h2 className="text-black-950 text-4xl lg:text-5xl font-bold font-sora tracking-wide">
+        <h2 className="text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide">
           What people says about us
         </h2>
-        <p className="text-black-700 text-lg lg:text-2xl font-normal font-['Switzer_Variable']">
+        <p className="text-black-700 text-lg lg:text-2xl font-normal">
           Real stories from those whose lives have been touched by our care.
         </p>
       </div>
@@ -74,6 +74,8 @@ const PAS = () => {
             alt="arrow left"
             width={24}
             height={24}
+            priority={false}
+            loading="lazy"
           />
         </button>
 
@@ -90,10 +92,10 @@ const PAS = () => {
             className="rounded-3xl max-w-[200px] lg:max-w-[300px] object-cover"
           />
           <div className="flex flex-col gap-3 max-w-lg ">
-            <p className="text-black-700 text-2xl lg:text-3xl font-medium font-['Switzer_Variable']">
+            <p className="text-black-700 text-2xl lg:text-3xl font-medium">
               {current.feedback}
             </p>
-            <h3 className="text-primary-700 text-lg lg:text-2xl font-medium font-['Switzer_Variable']">
+            <h3 className="text-primary-700 text-lg lg:text-2xl font-medium">
               {current.name}
             </h3>
           </div>
@@ -110,6 +112,8 @@ const PAS = () => {
             alt="arrow right"
             width={24}
             height={24}
+            priority={false}
+            loading="lazy"
           />
         </button>
       </div>

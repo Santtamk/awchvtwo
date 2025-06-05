@@ -34,12 +34,12 @@ const AboutUs = () => {
       <div className=" flex flex-col justify-center items-center">
         <div className="self-stretch flex flex-col justify-start items-start gap-2.5">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold font-sora tracking-wide">
+            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide">
               About Us
             </div>
           </div>
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-700  text-lg lg:text-2xl font-normal font-['Switzer_Variable']">
+            <div className="self-stretch text-center justify-start text-black-700  text-lg lg:text-2xl font-normal ">
               At AWCH, we care for every woman and child like family.
               <br />
               Rooted in compassion and powered by modern medicine, we combine
@@ -65,17 +65,19 @@ const AboutUs = () => {
                       width={28}
                       height={28}
                       className="w-6 h-6 lg:w-7 lg:h-7"
+                      priority={false}
+                      loading="lazy"
                     />
                   )}
                 </div>
                 <div className="self-stretch flex flex-col justify-start items-start">
                   <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                    <div className="self-stretch justify-start text-primary-700 text-lg lg:text-2xl font-medium font-sora">
+                    <div className="self-stretch justify-start text-primary-700 text-lg lg:text-2xl font-medium ">
                       {card.title}
                     </div>
                   </div>
                   <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                    <div className="self-stretch justify-start text-black-700 text-base lg:text-xl font-normal font-['Switzer_Variable']">
+                    <div className="self-stretch justify-start text-black-700 text-base lg:text-xl font-normal ">
                       {card.description}
                     </div>
                   </div>
