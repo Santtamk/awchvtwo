@@ -3,10 +3,10 @@ import CoreServices from "@/components/CoreServices/CoreServices";
 import MainForm from "@/components/Form/MainForm";
 
 import Hero from "@/components/Hero";
-import News from "@/components/News/News";
+// import News from "@/components/News/News";
 import OurDoctors from "@/components/OurDoctors/OurDoctors";
 import PAS from "@/components/PeopleAreSaying/PAS";
-import VideoSection from "@/components/VideoSection";
+// import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   return (
@@ -15,8 +15,8 @@ export default function Home() {
       <AboutUs />
       <CoreServices />
       <OurDoctors />
-      <News />
-      <VideoSection />
+      {/* <News /> */}
+      {/* <VideoSection /> */}
       <PAS />
       <MainForm />
     </>

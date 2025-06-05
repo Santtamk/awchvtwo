@@ -25,7 +25,14 @@ const VideoSection101 = () => {
         className="p-[0.9375rem] bg-primary-800 rounded-full flex justify-center items-center shrink-0 cursor-pointer hover:bg-primary-900 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-600 rotate-180"
         onClick={handlePrev}
       >
-        <Image src="/arrow_right.svg" alt="arrow left" width={24} height={24} />
+        <Image
+          src="/arrow_right.svg"
+          alt="arrow left"
+          width={24}
+          height={24}
+          priority={false}
+          loading="lazy"
+        />
       </button>
 
       {/* Video */}
@@ -50,6 +57,8 @@ const VideoSection101 = () => {
           alt="arrow right"
           width={24}
           height={24}
+          priority={false}
+          loading="lazy"
         />
       </button>
     </div>

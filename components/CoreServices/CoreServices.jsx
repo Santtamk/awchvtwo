@@ -39,12 +39,12 @@ const CoreServices = () => {
       <div className=" flex flex-col justify-start items-center gap-3">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold font-sora tracking-wide">
+            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold tracking-wide">
               Our Core Services
             </div>
           </div>
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-500 text-lg lg:text-2xl font-normal font-['Switzer_Variable']">
+            <div className="self-stretch text-center justify-start text-black-500 text-lg lg:text-2xl font-normal">
               Our healthcare offerings are built around the needs of modern
               individuals and families. From diagnostics to preventive programs,
               we provide comprehensive care for every stage of life.

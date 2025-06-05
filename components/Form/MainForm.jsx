@@ -101,12 +101,12 @@ const MainForm = () => {
       <div className=" flex flex-col justify-start items-center gap-5">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold font-sora tracking-wide">
+            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide">
               Schedule Your Visit at AWCH
             </div>
           </div>
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-700 text-base lg:text-xl font-normal font-switzer">
+            <div className="self-stretch text-center justify-start text-black-700 text-base lg:text-xl font-normal">
               Whether it's a routine check-up or a specialist consultation, our
               team is here to support your health journey with compassion and
               expertise.
@@ -120,7 +120,7 @@ const MainForm = () => {
         >
           <div className="flex-1 self-stretch p-2.5  inline-flex flex-col justify-center items-center content-center gap-5 overflow-hidden ">
             <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-              <div className="self-stretch justify-start text-primary-700 text-2xl lg:text-4xl font-medium font-sora tracking-wide">
+              <div className="self-stretch justify-start text-primary-700 text-2xl lg:text-4xl font-medium  tracking-wide">
                 Book your appointment online in just a few clicks and take the
                 first step toward better health today.
               </div>
@@ -157,14 +157,14 @@ const MainForm = () => {
                 {submitStatus.message}
               </div>
             )}
-            <div className="self-stretch flex flex-col justify-start items-start lg:gap-3 gap-1 font-switzer">
-              <div className="w-full flex flex-col lg:flex-row gap-2 font-switzer">
+            <div className="self-stretch flex flex-col justify-start items-start lg:gap-3 gap-1">
+              <div className="w-full flex flex-col lg:flex-row gap-2">
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <label className="justify-start text-black-950 text-base lg:text-xl font-medium font-switzer">
+                  <label className="justify-start text-black-950 text-base lg:text-xl font-medium">
                     First Name
                   </label>
                   <input
-                    className="self-stretch  px-2.5 py-4 lg:px-5 lg:py-4 bg-black-50 rounded-xl flex flex-col justify-start items-start gap-2.5 overflow-hidden text-xs lg:text-base font-switzer"
+                    className="self-stretch  px-2.5 py-4 lg:px-5 lg:py-4 bg-black-50 rounded-xl flex flex-col justify-start items-start gap-2.5 overflow-hidden text-xs lg:text-base"
                     required
                     placeholder="First Name"
                     name="firstName"
@@ -173,7 +173,7 @@ const MainForm = () => {
                   />
                 </div>
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <label className="justify-start text-black-950 text-base lg:text-xl font-medium font-switzer">
+                  <label className="justify-start text-black-950 text-base lg:text-xl font-medium">
                     Last Name
                   </label>
                   <input
@@ -186,7 +186,7 @@ const MainForm = () => {
                 </div>
               </div>
               <div className="self-stretch p-2.5 flex flex-col justify-center items-start gap-3.5 overflow-hidden">
-                <label className="justify-start text-black-950 text-xl font-medium font-switzer">
+                <label className="justify-start text-black-950 text-xl font-medium">
                   Specialty
                 </label>
                 <select
@@ -207,7 +207,7 @@ const MainForm = () => {
               </div>
               <div className="self-stretch inline-flex justify-center items-center overflow-hidden">
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <label className="justify-start text-black-950 text-xl font-medium font-switzer">
+                  <label className="justify-start text-black-950 text-xl font-medium">
                     Date
                   </label>
                   <input
@@ -221,7 +221,7 @@ const MainForm = () => {
                   />
                 </div>
                 <div className="flex-1 p-2.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <label className="justify-start text-black-950 text-xl font-medium font-switzer">
+                  <label className="justify-start text-black-950 text-xl font-medium">
                     Time
                   </label>
                   <input
@@ -236,7 +236,7 @@ const MainForm = () => {
                 </div>
               </div>
               <div className="self-stretch p-2.5 flex flex-col justify-center items-start gap-3.5 overflow-hidden">
-                <label className="justify-start text-black-950 text-xl font-medium font-switzer">
+                <label className="justify-start text-black-950 text-xl font-medium">
                   Mobile Number
                 </label>
                 <div className="self-stretch bg-black-50 text-black-500 rounded-xl inline-flex justify-between items-center overflow-hidden">
@@ -268,7 +268,7 @@ const MainForm = () => {
                 </div>
               </div>
               <div className="self-stretch p-2.5 flex flex-col justify-center items-start gap-3.5 overflow-hidden">
-                <label className="justify-start text-black-950 text-xl font-medium font-switzer">
+                <label className="justify-start text-black-950 text-xl font-medium">
                   Email
                 </label>
                 <input
@@ -286,7 +286,7 @@ const MainForm = () => {
               <button
                 type="submit"
                 className=" cursor-pointer
- w-full px-7 py-4 bg-primary-800 rounded-[32px] text-white text-xl font-medium font-switzer hover:bg-primary-900 hover:text-black-50 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-600 "
+ w-full px-7 py-4 bg-primary-800 rounded-[32px] text-white text-xl font-medium hover:bg-primary-900 hover:text-black-50 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-600 "
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Booking..." : "Book Your Slot"}
