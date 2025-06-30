@@ -25,6 +25,7 @@ const Navbar = () => {
           className="text-white bg-primary-800 font-medium rounded-4xl text-[0.9375rem] py-[0.75rem] cursor-pointer
  px-[0.9375rem] flex gap-[0.3125rem] items-center justify-center md:py-[1.125rem] md:px-[1.75rem] hover:bg-primary-900 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-600 text-base lg:text-xl"
           href="tel:+917872227333"
+          
         >
           <div className="size-4 lg:size-5 relative">
             <Image

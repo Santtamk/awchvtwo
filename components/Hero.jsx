@@ -51,7 +51,7 @@ const Hero_1 = () => {
         </div>
         <div className="self-stretch flex  items-start justify-center gap-3.5 flex-col lg:flex-row lg:justify-start">
           <a
-            href="tel:+918389001328"
+            href="tel:+917872227333"
             data-icon="true"
             data-property-1="Default"
             className="px-7 py-4 bg-primary-800 rounded-[32px] flex justify-center items-center gap-2.5 overflow-hidden cursor-pointer hover:bg-primary-900 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-600"
@@ -94,19 +94,27 @@ const Hero_1 = () => {
           </button>
         </div>
       </div>
-      <div className="w-[500px] h-[650px] relative rounded-[32px]  flex-col justify-start items-start gap-2.5 hidden lg:block">
+      <div className="w-[500px] h-[650px] relative rounded-[32px]  flex-col justify-start items-start gap-2.5 hidden lg:block ">
         <div className="size-[500px] left-0 top-[75px] absolute bg-radial from-primary-200 to-black-50 rounded-full blur-[50px]" />
-
-        <Image
-          src="/hero27.webp"
-          alt="hero image"
-          width={500}
-          height={650}
-          className="rounded-[32px] relative"
-          // priority={true}
-          priority={false}
-          loading="lazy"
-        />
+        <div
+          style={{
+            maskImage:
+              // "radial-gradient(100% 100% at 50% 0%, black 0%, transparent 100%)",
+            "linear-gradient(rgba(0, 0, 0, 1) 50%, transparent 100%)",
+            // "linear-gradient(to top, transparent 20%, black 90%)"
+          }}
+        >
+          <Image
+            src="/design1.png"
+            alt="hero image"
+            width={500}
+            height={650}
+            className="rounded-[32px] relative"
+            // priority={true}
+            priority={false}
+            loading="lazy"
+          />
+        </div>
       </div>
     </div>
   );
