@@ -16,12 +16,12 @@ const doctors = [
     slug: "priyanka-mandal",
   },
   {
-    name: "Dr Neetu Singh",
+    name: "Dr. Neetu Singh",
     image: "/Doctors/neetu_singh.jpg",
     slug: "neetu-singh",
   },
   {
-    name: "Dr Sanjeeda Khanam",
+    name: "Dr. Sanjeeda Khanam",
     image: "/placeholder.png", // placeholder image
     slug: "sanjeeda-khanam",
     comingSoon: true,
@@ -57,7 +57,7 @@ const OurDoctors = () => {
             <Link href={`/doctors/${doctor.slug}`} key={index}>
               <div
                 key={index}
-                className="relative flex-1 min-w-[250px] lg:h-[500px] h-80 rounded-3xl overflow-hidden group transition-transform duration-200 hover:scale-[1.015] hover:shadow-xl cursor-pointer"
+                className="relative flex-1 min-w-[250px] lg:h-[500px] h-80 rounded-3xl overflow-hidden group transition-transform duration-200 hover:scale-[1.015] hover:shadow-xl cursor-pointer "
               >
                 {/* Background Image using Next.js Image */}
                 <Image
@@ -76,7 +76,7 @@ const OurDoctors = () => {
                 {/* Content */}
                 <div className="absolute bottom-0 w-full p-5 z-30">
                   <div className="text-black-50 text-xl lg:text-3xl font-medium">
-                    {doctor.name}
+                    {doctor.name}{" "}
                   </div>
                 </div>
               </div>

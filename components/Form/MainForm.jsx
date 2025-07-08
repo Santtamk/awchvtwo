@@ -134,7 +134,7 @@ const MainForm = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-3xl w-full  h-[15.625rem] lg:h-full"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27783.883082850258!2d86.96112987585762!3d23.684148679443517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71f0ea1022529%3A0xf888f7e7fd11cefe!2sAsansol%2C%20West%20Bengal!5e1!3m2!1sen!2sin!4v1747991543573!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.844203613529!2d86.98761028173925!3d23.681528881099652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f719005eb9b5e5%3A0xd6da4506111bbe3a!2sAvishkar%20Women%20and%20Children%20Hospital!5e0!3m2!1sen!2sin!4v1751968160245!5m2!1sen!2sin"
               ></iframe>
             </div>
           </div>
@@ -278,7 +278,6 @@ const MainForm = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  required
                 />
               </div>
             </div>
