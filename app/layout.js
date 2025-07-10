@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "AWCH is a trusted woman and child hospital in Asansol, West Bengal. Expert maternity, pediatric, and gynecological care.",
   icons: {
-    icon: "/favIcon.png",
+    icon: "/favIcon.ico",
   },
   keywords:
     "woman hospital Asansol, child hospital Asansol, maternity care, pediatrician Asansol, gynecologist Asansol, AWCH",
@@ -54,6 +54,20 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={` scroll-smooth ${inter.variable} `}>
+      <Head>
+        {/* Manual fallback to ensure proper crawling */}
+        <title>Avishkar Woman and Child Hospital | AWCH Asansol</title>
+        <meta
+          name="description"
+          content="AWCH is a trusted woman and child hospital in Asansol, West Bengal. Expert maternity, pediatric, and gynecological care."
+        />
+        <meta
+          name="keywords"
+          content="woman hospital Asansol, child hospital Asansol, maternity care, pediatrician Asansol, gynecologist Asansol, AWCH"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" href="/favIcon.ico" sizes="any" />
+      </Head>
       <body className={`antialiased bg-black-50`}>
         <Navbar />
         <main className="max-w-[1440px] mx-auto">
