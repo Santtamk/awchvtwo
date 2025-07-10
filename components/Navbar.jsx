@@ -5,7 +5,10 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="flex p-2.5 justify-between items-center gap-2  md:pt-4 md:px-7 lg:p-5 lg:px-25">
-      <Link href="/" className="cursor-pointer">
+      <Link
+        href="/"
+        className="cursor-pointer flex justify-center items-center  p-2 md:p-0 lg:pb-4 content-center"
+      >
         <div className="list-none flex flex-col gap-[1rem] justify-center items-center">
           <div className="w-[4.25rem] h-[0.8125rem] md:w-[9.4375rem] md:h-[1.875rem]">
             <Image

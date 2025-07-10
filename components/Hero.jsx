@@ -2,6 +2,7 @@
 
 import { FaUserDoctor } from "react-icons/fa6";
 import Image from "next/image";
+import CountUp from "react-countup";
 
 const Hero_1 = () => {
   return (
@@ -19,7 +20,7 @@ const Hero_1 = () => {
             professionals around the clock.
           </div>
         </div>
-        <div className="self-stretch p-2.5 inline-flex justify-start items-start overflow-hidden">
+        {/* <div className=" p-2.5 inline-flex justify-start items-start ">
           <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
             <div className="self-stretch justify-start text-primary-800 text-2xl lg:text-4xl  font-bold  ">
               25+
@@ -41,6 +42,39 @@ const Hero_1 = () => {
           <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
             <div className="self-stretch justify-start text-primary-800 text-2xl font-bold lg:text-4xl ">
               98%
+            </div>
+            <div className="self-stretch justify-start text-black-700 text-xs lg:text-lg font-normal">
+              Patient Satisfaction
+              <br />
+              Rate
+            </div>
+          </div>
+        </div> */}
+        <div className="self-stretch p-2.5 inline-flex justify-start items-start overflow-hidden">
+          <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
+            <div className="self-stretch justify-start text-primary-800 text-2xl lg:text-4xl font-bold">
+              <CountUp end={25} duration={2.5} />+
+            </div>
+            <div className="self-stretch justify-start text-black-700 text-xs lg:text-lg font-normal">
+              Clinics in
+              <br />
+              Asansol
+            </div>
+          </div>
+
+          <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
+            <div className="self-stretch justify-start text-primary-800 text-2xl lg:text-4xl font-bold">
+              <CountUp end={580} duration={2.5} />+
+            </div>
+            <div className="self-stretch justify-start text-black-700 text-xs lg:text-lg font-normal">
+              Certified Medical <br />
+              Professionals
+            </div>
+          </div>
+
+          <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
+            <div className="self-stretch justify-start text-primary-800 text-2xl font-bold lg:text-4xl">
+              <CountUp end={98} duration={2.5} suffix="%" />
             </div>
             <div className="self-stretch justify-start text-black-700 text-xs lg:text-lg font-normal">
               Patient Satisfaction
@@ -100,7 +134,7 @@ const Hero_1 = () => {
           style={{
             maskImage:
               // "radial-gradient(100% 100% at 50% 0%, black 0%, transparent 100%)",
-            "linear-gradient(rgba(0, 0, 0, 1) 50%, transparent 100%)",
+              "linear-gradient(rgba(0, 0, 0, 1) 50%, transparent 100%)",
             // "linear-gradient(to top, transparent 20%, black 90%)"
           }}
         >

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { MdArrowOutward } from "react-icons/md";
+// import { MdArrowOutward } from "react-icons/md";
 
 const ServiceCard = ({ title, image }) => {
   return (
@@ -22,7 +22,7 @@ const ServiceCard = ({ title, image }) => {
           </div>
         </div>
         {/* Hover effect added on this button */}
-        <button className="size- px-7 py-4 bg-white/30 rounded-[32px] backdrop-blur-md inline-flex justify-center items-center gap-2.5 overflow-hidden text-white hover:bg-primary-50 transition-all duration-300 group-hover:bg-white/40 hover:backdrop-blur-lg hover:scale-105 cursor-pointer hover:text-primary-700">
+        {/* <button className="size- px-7 py-4 bg-white/30 rounded-[32px] backdrop-blur-md inline-flex justify-center items-center gap-2.5 overflow-hidden text-white hover:bg-primary-50 transition-all duration-300 group-hover:bg-white/40 hover:backdrop-blur-lg hover:scale-105 cursor-pointer hover:text-primary-700">
           <div className="justify-start text-white text-base lg:text-xl font-medium transition-colors duration-300 group-hover:text-primary-700 ">
             Read More
           </div>
@@ -34,7 +34,7 @@ const ServiceCard = ({ title, image }) => {
               className="w-6 h-6 aspect-square"
             />
           </div>
-        </button>
+        </button> */}
       </div>
     </div>
   );
