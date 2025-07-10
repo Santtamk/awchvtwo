@@ -62,6 +62,10 @@ export default function RootLayout({ children }) {
           content="AWCH is a trusted woman and child hospital in Asansol, West Bengal. Expert maternity, pediatric, and gynecological care."
         />
         <meta
+          name="google-site-verification"
+          content="uwbxAXi9JYhgVWL6krN8xSshRs7Kjt-lBMGfVfblxLQ"
+        />
+        <meta
           name="keywords"
           content="woman hospital Asansol, child hospital Asansol, maternity care, pediatrician Asansol, gynecologist Asansol, AWCH"
         />
