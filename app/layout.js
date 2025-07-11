@@ -54,7 +54,7 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={` scroll-smooth ${inter.variable} `}>
-      <Head>
+      <head>
         {/* Manual fallback to ensure proper crawling */}
         <title>Avishkar Woman and Child Hospital | AWCH Asansol</title>
         <meta
@@ -71,7 +71,8 @@ export default function RootLayout({ children }) {
         />
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favIcon.ico" sizes="any" />
-      </Head>
+        <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+      </head>
       <body className={`antialiased bg-black-50`}>
         <Navbar />
         <main className="max-w-[1440px] mx-auto">
