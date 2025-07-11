@@ -59,11 +59,15 @@ export default function RootLayout({ children }) {
         <title>Avishkar Woman and Child Hospital | AWCH Asansol</title>
         <meta
           name="description"
-          content="AWCH is a trusted woman and child hospital in Asansol, West Bengal. Expert maternity, pediatric, and gynecological care."
+          content="Avishkar Woman and Child Hospital is a trusted woman and child hospital in Asansol, West Bengal. Expert maternity, pediatric, and gynecological care."
         />
         <meta
           name="google-site-verification"
           content="uwbxAXi9JYhgVWL6krN8xSshRs7Kjt-lBMGfVfblxLQ"
+        />
+        <meta
+          property="og:site_name"
+          content="Avishkar Woman and Child Hospital"
         />
         <meta
           name="keywords"
@@ -72,6 +76,23 @@ export default function RootLayout({ children }) {
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favIcon.ico" sizes="any" />
         <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Avishkar Woman and Child Hospital",
+              url: "https://avishkarhospitals.com",
+              potentialAction: {
+                "@type": "SearchAction",
+                target:
+                  "https://avishkarhospitals.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
       </head>
       <body className={`antialiased bg-black-50`}>
         <Navbar />
