@@ -13,8 +13,55 @@ export const metadata = {
   icons: {
     icon: "/favIcon.ico",
   },
-  keywords:
-    "woman hospital Asansol, child hospital Asansol, maternity care, pediatrician Asansol, gynecologist Asansol, AWCH",
+  keywords: [
+  // Brand terms
+  "Avishkar Hospital",
+  "AWCH",
+  "Avishkar Woman and Child Hospital",
+  "Awishkar Hospital", // common misspelling
+  "Awishkar Child Hospital", // another variation
+
+  // Location-based
+  "hospital in Asansol",
+  "woman hospital Asansol",
+  "child hospital Asansol",
+  "maternity hospital Asansol",
+  "best hospital Asansol",
+  "pediatric hospital Asansol",
+  "gynecologist in Asansol",
+  "child specialist Asansol",
+  "delivery hospital Asansol",
+  "pregnancy care Asansol",
+  "newborn care Asansol",
+  "baby hospital Asansol",
+
+  // Services
+  "maternity care",
+  "gynecology",
+  "pediatrics",
+  "women's health",
+  "pregnancy services",
+  "normal delivery",
+  "C-section delivery",
+  "newborn screening",
+  "postnatal care",
+  "neonatal ICU",
+  "vaccination for children",
+  "child growth monitoring",
+
+  // Region-specific
+  "West Bengal hospital",
+  "maternity hospital West Bengal",
+  "child hospital West Bengal",
+  "gynecologist West Bengal",
+
+  // Informational/search phrases
+  "where to deliver baby in Asansol",
+  "top child doctor in Asansol",
+  "best maternity care in Asansol",
+  "trusted woman hospital Asansol",
+  "baby vaccination Asansol"
+],
   authors: [{ name: "Avishkar Woman and Child Hospital" }],
   creator: "Avishkar Woman and Child Hospital",
   metadataBase: new URL("https://avishkarhospitals.com/"),
