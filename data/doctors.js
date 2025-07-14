@@ -24,7 +24,7 @@ const doctors = [
     slug: "priyanka-mandal",
     specialty: "Obstetrician & Gynecologist",
     medicalEdu: "MBBS, MS (Obst. & Gynae.), FMAS, MRCOG-1 (UK)",
-    image: "/Doctors/PRIYANKA_MANDAL.webp",
+    image: "/Doctors/priyanka_mandal.webp",
     bio: {
       p1: "Dr. Priyanka Mandal is a dynamic and compassionate Obstetrician and Gynecologist with expertise in minimal access and advanced abdominal surgeries, as well as high-risk pregnancy management.",
       p2: "She is proficient in laparoscopic and hysteroscopic procedures, and has independently handled complex surgeries such as total abdominal hysterectomy in grade 4 endometriosis, myomectomy, pelvic floor repair (VHPFR), and vaginoplasty. She has worked in high-pressure hospital settings, managing both surgical theaters and labor units.",
