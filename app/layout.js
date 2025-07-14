@@ -4,7 +4,11 @@ import Navbar from "@/components/Navbar";
 import { Toaster } from "react-hot-toast";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const metadata = {
   title: "Avishkar Woman and Child Hospital | AWCH Asansol",
@@ -14,54 +18,54 @@ export const metadata = {
     icon: "/favIcon.ico",
   },
   keywords: [
-  // Brand terms
-  "Avishkar Hospital",
-  "AWCH",
-  "Avishkar Woman and Child Hospital",
-  "Awishkar Hospital", // common misspelling
-  "Awishkar Child Hospital", // another variation
+    // Brand terms
+    "Avishkar Hospital",
+    "AWCH",
+    "Avishkar Woman and Child Hospital",
+    "Awishkar Hospital", // common misspelling
+    "Awishkar Child Hospital", // another variation
 
-  // Location-based
-  "hospital in Asansol",
-  "woman hospital Asansol",
-  "child hospital Asansol",
-  "maternity hospital Asansol",
-  "best hospital Asansol",
-  "pediatric hospital Asansol",
-  "gynecologist in Asansol",
-  "child specialist Asansol",
-  "delivery hospital Asansol",
-  "pregnancy care Asansol",
-  "newborn care Asansol",
-  "baby hospital Asansol",
+    // Location-based
+    "hospital in Asansol",
+    "woman hospital Asansol",
+    "child hospital Asansol",
+    "maternity hospital Asansol",
+    "best hospital Asansol",
+    "pediatric hospital Asansol",
+    "gynecologist in Asansol",
+    "child specialist Asansol",
+    "delivery hospital Asansol",
+    "pregnancy care Asansol",
+    "newborn care Asansol",
+    "baby hospital Asansol",
 
-  // Services
-  "maternity care",
-  "gynecology",
-  "pediatrics",
-  "women's health",
-  "pregnancy services",
-  "normal delivery",
-  "C-section delivery",
-  "newborn screening",
-  "postnatal care",
-  "neonatal ICU",
-  "vaccination for children",
-  "child growth monitoring",
+    // Services
+    "maternity care",
+    "gynecology",
+    "pediatrics",
+    "women's health",
+    "pregnancy services",
+    "normal delivery",
+    "C-section delivery",
+    "newborn screening",
+    "postnatal care",
+    "neonatal ICU",
+    "vaccination for children",
+    "child growth monitoring",
 
-  // Region-specific
-  "West Bengal hospital",
-  "maternity hospital West Bengal",
-  "child hospital West Bengal",
-  "gynecologist West Bengal",
+    // Region-specific
+    "West Bengal hospital",
+    "maternity hospital West Bengal",
+    "child hospital West Bengal",
+    "gynecologist West Bengal",
 
-  // Informational/search phrases
-  "where to deliver baby in Asansol",
-  "top child doctor in Asansol",
-  "best maternity care in Asansol",
-  "trusted woman hospital Asansol",
-  "baby vaccination Asansol"
-],
+    // Informational/search phrases
+    "where to deliver baby in Asansol",
+    "top child doctor in Asansol",
+    "best maternity care in Asansol",
+    "trusted woman hospital Asansol",
+    "baby vaccination Asansol",
+  ],
   authors: [{ name: "Avishkar Woman and Child Hospital" }],
   creator: "Avishkar Woman and Child Hospital",
   metadataBase: new URL("https://avishkarhospitals.com/"),
@@ -92,12 +96,10 @@ export const metadata = {
   },
 };
 
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable}`}>
-      <head>
+      {/* <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -112,12 +114,12 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="Avishkar Woman and Child Hospital" />
         <meta name="google-site-verification" content="uwbxAXi9JYhgVWL6krN8xSshRs7Kjt-lBMGfVfblxLQ" />
 
-        {/* Favicons */}
+        Favicons
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-        {/* Site‑name structured data */}
+        Site‑name structured data
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -134,7 +136,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-      </head>
+      </head> */}
 
       <body className="antialiased bg-black-50">
         <Navbar />
