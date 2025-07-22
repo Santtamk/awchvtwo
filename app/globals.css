@@ -35,7 +35,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono);  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,3 +54,13 @@
     font-family: var(--font-inter), sans-serif;
   }
 }
+
+@theme{
+   --animate-pulse-scale: pulse-scale 2s ease-in-out infinite;
+
+  @keyframes pulse-scale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+  }
+}
+

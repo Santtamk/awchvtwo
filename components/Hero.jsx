@@ -6,51 +6,20 @@ import CountUp from "react-countup";
 
 const Hero_1 = () => {
   return (
-    <div className="flex justify-center items-start lg:content-center  lg:px-25 lg:items-center lg:justify-center p-[0.625rem]">
-      <div className="flex-1 p-2.5 flex flex-col justify-start items-start gap-4  lg:items-center lg:justify-center">
+    <div className="flex justify-center items-start lg:content-center  lg:px-25 lg:items-center lg:justify-center p-1 ">
+      <div className="flex-1 p-2.5 flex flex-col justify-start items-start gap-7  lg:items-center lg:justify-center ">
         <div className="self-stretch flex flex-col justify-start items-start">
-          <h1 className="self-stretch justify-start text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide">
-            Expert Healthcare Consultation
-            <br />
-            Anytime, Anywhere
+          <h1 className="self-stretch justify-start text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide z-10">
+            Expert Women and Child Healthcare in Asansol
           </h1>
-          <div className=" p-[0.625rem] self-stretch justify-start text-black-700 text-lg lg:text-2xl font-normal">
-            Access top tier health consultations from the comfort of your home
-            or on the go. Our platform connects you with experienced medical
-            professionals around the clock.
-          </div>
+          <h2 className=" pt-1 self-stretch justify-start text-black-700 text-lg lg:text-xl font-normal z-10">
+            Access top-tier health consultations from the comfort of your home
+            or while on the go. Avishkar Woman and Child Hospital in Asansol
+            connects you with experienced medical professionals, 24/7.
+          </h2>
         </div>
-        {/* <div className=" p-2.5 inline-flex justify-start items-start ">
-          <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
-            <div className="self-stretch justify-start text-primary-800 text-2xl lg:text-4xl  font-bold  ">
-              25+
-            </div>
-            <div className="self-stretch justify-start text-black-700 text-xs lg:text-lg font-normal ">
-              Clinics in
-              <br />
-              Asansol
-            </div>
-          </div>
-          <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
-            <div className="self-stretch justify-start text-primary-800 text-2xl lg:text-4xl font-bold ">
-              580+
-            </div>
-            <div className="self-stretch justify-start text-black-700 text-xs lg:text-lg font-normal">
-              Certified Medical <br /> Professionals
-            </div>
-          </div>
-          <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
-            <div className="self-stretch justify-start text-primary-800 text-2xl font-bold lg:text-4xl ">
-              98%
-            </div>
-            <div className="self-stretch justify-start text-black-700 text-xs lg:text-lg font-normal">
-              Patient Satisfaction
-              <br />
-              Rate
-            </div>
-          </div>
-        </div> */}
-        <div className="self-stretch p-2.5 inline-flex justify-start items-start overflow-hidden">
+
+        <div className="self-stretch pt-2.5 inline-flex justify-start items-start overflow-hidden z-10">
           <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
             <div className="self-stretch justify-start text-primary-800 text-2xl lg:text-4xl font-bold">
               <CountUp end={25} duration={2.5} />+
@@ -128,27 +97,41 @@ const Hero_1 = () => {
           </button>
         </div>
       </div>
-      <div className="w-[500px] h-[650px] relative rounded-[32px]  flex-col justify-start items-start gap-2.5 hidden lg:block ">
-        <div className="size-[500px] left-0 top-[75px] absolute bg-radial from-primary-200 to-black-50 rounded-full blur-[50px]" />
-        <div
+      <div className="w-[500px] h-[650px] relative rounded-[32px]  flex-col justify-start items-start gap-2.5 hidden lg:flex lg:items-center lg:justify-center">
+        {/* <div className="size-[700px]  absolute bg-radial from-primary-200 to-black-50 rounded-full blur-[50px] overflow-hidden" /> */}
+        {/* <div
           style={{
             maskImage:
-              // "radial-gradient(100% 100% at 50% 0%, black 0%, transparent 100%)",
               "linear-gradient(rgba(0, 0, 0, 1) 50%, transparent 100%)",
-            // "linear-gradient(to top, transparent 20%, black 90%)"
           }}
-        >
+        > */}
+        <div>
+          <div
+            className="flex items-center justify-center content-center 
+           transition-transform duration-500 
+           "
+          >
+            <Image
+              src="/herolg.webp"
+              alt="hero image"
+              width={650}
+              height={700}
+              className="relative transition-transform duration-500 scale-110"
+              priority={false}
+              loading="lazy"
+            />
+          </div>
           <Image
-            src="/design1.png"
+            src="/heroism.webp"
             alt="hero image"
-            width={500}
-            height={650}
-            className="rounded-[32px] relative"
-            // priority={true}
+            width={80}
+            height={70}
+            className=" absolute bottom-60 left-[194px] animate-[var(--animate-pulse-scale)]"
             priority={false}
             loading="lazy"
           />
         </div>
+        {/* </div> */}
       </div>
     </div>
   );
