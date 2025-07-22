@@ -8,7 +8,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function DoctorPage({ params }) {
+export default async function DoctorPage({ params }) {
+  const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
   const doctor = doctors.find((d) => d.slug === params.slug);
 
   if (!doctor)
