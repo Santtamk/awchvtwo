@@ -22,7 +22,7 @@ const Hero_1 = () => {
         <div className="self-stretch pt-2.5 inline-flex justify-start items-start overflow-hidden z-10">
           <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
             <div className="self-stretch justify-start text-primary-800 text-2xl lg:text-4xl font-bold">
-              <CountUp end={25} duration={2.5} />+
+              <CountUp end={11} duration={2.5} />
             </div>
             <div className="self-stretch justify-start text-black-700 text-xs lg:text-lg font-normal">
               Clinics in
