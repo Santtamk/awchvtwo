@@ -16,9 +16,15 @@ export default async function DoctorPage({ params }) {
     return <div className="text-center text-lg py-10">Doctor not found.</div>;
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
-      {/* Doctor Image */}
-      <div className="w-full h-auto flex justify-center items-start">
+    <div className="max-w-5xl mx-auto px-6 py-10">
+      {/* Back Button - Top positioned for easy access */}
+      <div className="mb-8">
+        <BackButton />
+      </div>
+      
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        {/* Doctor Image */}
+        <div className="w-full h-auto flex justify-center items-start">
         <Image
           src={doctor.image}
           alt={doctor.name}
@@ -73,9 +79,6 @@ export default async function DoctorPage({ params }) {
           </div>
         </div>
       </div>
-      {/* Back Button */}
-      <div className="max-w-5xl mx-auto px-6 pt-8">
-        <BackButton />
       </div>
     </div>
   );

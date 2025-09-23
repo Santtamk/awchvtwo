@@ -10,11 +10,11 @@ const Hero_1 = () => {
       <div className="flex-1 p-2.5 flex flex-col justify-start items-start gap-7  lg:items-center lg:justify-center ">
         <div className="self-stretch flex flex-col justify-start items-start">
           <h1 className="self-stretch justify-start text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide z-10">
-            Expert Women and Child Healthcare in Asansol
+            Expert Women and Children Healthcare in Asansol
           </h1>
           <h2 className=" pt-1 self-stretch justify-start text-black-700 text-lg lg:text-xl font-normal z-10">
             Access top-tier health consultations from the comfort of your home
-            or while on the go. Avishkar Woman and Child Hospital in Asansol
+            or while on the go. Avishkar Women and Children Hospital in Asansol
             connects you with experienced medical professionals, 24/7.
           </h2>
         </div>

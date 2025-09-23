@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Avishkar Woman and Child Hospital | AWCH Asansol",
+  title: "Avishkar Women and Children Hospital | AWCH Asansol",
   description:
-    "Avishkar Woman and Child Hospital (AWCH) in Asansol, West Bengal offers expert maternity, pediatric, and gynecological care. Trusted by families for safe and compassionate treatment.",
+    "Avishkar Women and Children Hospital (AWCH) in Asansol, West Bengal offers expert maternity, pediatric, and gynecological care. Trusted by families for safe and compassionate treatment.",
 
   icons: {
     icon: "/favIcon.ico",
@@ -22,19 +22,19 @@ export const metadata = {
     // Brand terms
     "Avishkar Hospital",
     "AWCH",
-    "Avishkar Woman and Child Hospital",
+    "Avishkar Women and Children Hospital",
     "Awishkar Hospital", // common misspelling
-    "Awishkar Child Hospital", // another variation
+    "Awishkar Children Hospital", // another variation
 
     // Location-based
     "hospital in Asansol",
-    "woman hospital Asansol",
-    "child hospital Asansol",
+    "women hospital Asansol",
+    "children hospital Asansol",
     "maternity hospital Asansol",
     "best hospital Asansol",
     "pediatric hospital Asansol",
     "gynecologist in Asansol",
-    "child specialist Asansol",
+    "children specialist Asansol",
     "delivery hospital Asansol",
     "pregnancy care Asansol",
     "newborn care Asansol",
@@ -51,29 +51,29 @@ export const metadata = {
     "newborn screening",
     "postnatal care",
     "neonatal ICU",
-    "vaccination for children",
-    "child growth monitoring",
+    "vaccination for childrenren",
+    "children growth monitoring",
 
     // Region-specific
     "West Bengal hospital",
     "maternity hospital West Bengal",
-    "child hospital West Bengal",
+    "children hospital West Bengal",
     "gynecologist West Bengal",
 
     // Informational/search phrases
     "where to deliver baby in Asansol",
-    "top child doctor in Asansol",
+    "top children doctor in Asansol",
     "best maternity care in Asansol",
-    "trusted woman hospital Asansol",
+    "trusted women hospital Asansol",
     "baby vaccination Asansol",
   ],
-  authors: [{ name: "Avishkar Woman and Child Hospital" }],
-  creator: "Avishkar Woman and Child Hospital",
+  authors: [{ name: "Avishkar Women and Children Hospital" }],
+  creator: "Avishkar Women and Children Hospital",
   metadataBase: new URL("https://avishkarhospitals.com/"),
   openGraph: {
-    title: "Avishkar Woman and Child Hospital | AWCH Asansol",
+    title: "Avishkar Women and Children Hospital | AWCH Asansol",
     description:
-      "Avishkar Woman and Child Hospital (AWCH) in Asansol provides expert maternity, pediatric, and gynecological services in a caring and trusted environment.",
+      "Avishkar Women and Children Hospital (AWCH) in Asansol provides expert maternity, pediatric, and gynecological services in a caring and trusted environment.",
     url: "https://avishkarhospitals.com",
     siteName: "AWCH",
 
@@ -90,7 +90,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Avishkar Woman and Child Hospital | AWCH Asansol",
+    title: "Avishkar Women and Children Hospital | AWCH Asansol",
     description:
       "AWCH in Asansol offers compassionate maternity, pediatric, and gynecology care. Trusted by families across West Bengal.",
     images: ["https://avishkarhospitals.com/nav_image.webp"],

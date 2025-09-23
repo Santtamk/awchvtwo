@@ -85,7 +85,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="size-  p-1 lg:p-2.5 bg-primary-50 rounded-xl inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+          {/* <div className="size-  p-1 lg:p-2.5 bg-primary-50 rounded-xl inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
             <div className="size-4 lg:size-6 relative overflow-hidden">
               <Image
                 alt="x"
@@ -97,7 +97,7 @@ const Footer = () => {
                 loading="lazy"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
