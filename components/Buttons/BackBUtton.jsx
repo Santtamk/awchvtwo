@@ -14,7 +14,7 @@ export default function BackButton() {
 
         hover:border-primary-400 group"
     >
-      <IoArrowBack 
+      <IoArrowBack
         size={16}
         className="transition-transform duration-300 group-hover:-translate-x-1"
       />
@@ -22,4 +22,3 @@ export default function BackButton() {
     </button>
   );
 }
-       
