@@ -90,7 +90,7 @@ const PAS = () => {
             className="rounded-3xl max-w-[200px] lg:max-w-[300px] object-cover"
           />
           <div className="flex flex-col gap-3 max-w-lg ">
-            <p className="text-black-700 text-xl lg:text-2xl font-medium sm:text-center xs:test-center">
+            <p className="text-black-700 text-xl lg:text-2xl font-medium">
               {current.feedback}
             </p>
             <h3 className="text-primary-700 text-lg lg:text-2xl font-medium">
