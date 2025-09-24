@@ -34,7 +34,7 @@ const AboutUs = () => {
       <div className=" flex flex-col justify-center items-center">
         <div className="self-stretch flex flex-col justify-start items-start gap-2.5">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide">
+            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold tracking-tight">
               About Us
             </div>
           </div>

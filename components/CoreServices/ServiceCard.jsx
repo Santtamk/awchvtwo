@@ -17,7 +17,7 @@ const ServiceCard = ({ title, image }) => {
       <div className="absolute inset-0 bg-gradient-to-bl from-black/40 to-black/60 z-10" />
       <div className="z-10 absolute self-stretch p-5 flex flex-col justify-start items-start gap-2 overflow-hidden">
         <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-          <div className="self-stretch justify-start text-black-50 text-3xl font-medium">
+          <div className="self-stretch justify-start text-black-50 text-3xl font-medium whitespace-pre-line leading-tight">
             {title}
           </div>
         </div>

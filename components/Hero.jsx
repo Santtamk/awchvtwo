@@ -9,7 +9,7 @@ const Hero_1 = () => {
     <div className="flex justify-center items-start lg:content-center  lg:px-25 lg:items-center lg:justify-center p-1 ">
       <div className="flex-1 p-2.5 flex flex-col justify-start items-start gap-7  lg:items-center lg:justify-center ">
         <div className="self-stretch flex flex-col justify-start items-start">
-          <h1 className="self-stretch justify-start text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide z-10">
+          <h1 className="self-stretch justify-start text-black-950 text-4xl lg:text-5xl font-bold tracking-tight z-10">
             Expert Women and Children Healthcare in Asansol
           </h1>
           <h2 className=" pt-1 self-stretch justify-start text-black-700 text-lg lg:text-xl font-normal z-10">

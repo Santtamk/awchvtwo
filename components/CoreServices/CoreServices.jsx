@@ -3,17 +3,17 @@ import ServiceCard from "./ServiceCard";
 
 const section1 = [
   {
-    title: "General Medicine & Family Care",
+    title: "General Medicine &\nFamily Care",
 
     image: "/Services/section1/General.webp",
   },
   {
-    title: "Specialist Consultations",
+    title: "Specialist\nConsultations",
 
     image: "/Services/section1/Specialist.webp",
   },
   {
-    title: "Diagnostics & Lab Services",
+    title: "Diagnostics &\nLab Services",
 
     image: "/Services/section1/Diagnostics.webp",
   },
@@ -21,15 +21,14 @@ const section1 = [
 
 const section2 = [
   {
-    title: "Women’s health",
+    title: "Women’s\nhealth",
 
-    image: "/Services/section2/happy-woman-standing-showing-biceps.webp",
+    image: "/Services/section2/Womenhealth.webp",
   },
   {
-    title: "Child Health",
+    title: "Child\nHealth",
 
-    image:
-      "/Services/section2/pediatric-doctor-comforting-child-patient-checkup-warm-colorful-clinic.webp",
+    image: "/Services/section2/Childhealth.webp",
   },
 ];
 
@@ -39,7 +38,7 @@ const CoreServices = () => {
       <div className=" flex flex-col justify-start items-center gap-3">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold tracking-wide">
+            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold tracking-tight">
               Our Core Services
             </div>
           </div>

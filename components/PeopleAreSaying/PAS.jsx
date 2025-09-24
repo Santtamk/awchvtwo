@@ -4,22 +4,20 @@ import React, { useState } from "react";
 
 const testimonials = [
   {
-    image: "/PAS/image.webp",
-    name: "Dianne Russell",
-    feedback:
-      "The doctors at AWCH are knowledgeable, attentive, and genuinely care about your well-being. I felt heard and supported throughout my treatment.",
+    image: "/PAS/testimonial1.webp",
+    name: "Sarla Devi",
+    feedback: `I am so grateful for the care I received at AWCH hospital. The doctors and nurses took such wonderful care of me.
+I feel great now, and the service here is truly excellent. I would wholeheartedly recommend AWCH to anyone in need of medical help.`,
   },
   {
-    image: "/PAS/image2.webp",
-    name: "Ralph Edwards",
-    feedback:
-      "The doctors at AWCH are knowledgeable, attentive, and genuinely care about your well-being. I felt heard and supported throughout my treatment.",
+    image: "/PAS/testimonial2.webp",
+    name: "Anita Kumari",
+    feedback: `When my son was sick, we were so worried, but the team at AWCH was a godsend. I want to express my sincere thanks to all the doctors and the entire nursing staff for the care, devotion and patience displayed during the course of his treatment. Thank you, AWCH team, for making this a positive experience.`,
   },
   {
-    image: "/PAS/image3.webp",
-    name: "Jenny Wilson",
-    feedback:
-      "The doctors at AWCH are knowledgeable, attentive, and genuinely care about your well-being. I felt heard and supported throughout my treatment.",
+    image: "/PAS/testimonial3.webp",
+    name: "Priya Sharma",
+    feedback: `I was a patient at AWCH hospital. The service here is truly excellent. The nurses and staff were all wonderful, and their kindness made my experience great. I am very happy and would highly recommend AWCH to everyone.`,
   },
 ];
 
@@ -53,7 +51,7 @@ const PAS = () => {
     <div className="w-full flex flex-col items-center justify-center content-center gap-4 lg:gap-6  px-4 lg:px-25 py-10">
       {/* Header texts */}
       <div className="flex flex-col items-center gap-3 lg:gap-5  text-center">
-        <h2 className="text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide">
+        <h2 className="text-black-950 text-4xl lg:text-5xl font-bold  tracking-tight">
           What people says about us
         </h2>
         <p className="text-black-700 text-lg lg:text-2xl font-normal">
@@ -92,7 +90,7 @@ const PAS = () => {
             className="rounded-3xl max-w-[200px] lg:max-w-[300px] object-cover"
           />
           <div className="flex flex-col gap-3 max-w-lg ">
-            <p className="text-black-700 text-2xl lg:text-3xl font-medium">
+            <p className="text-black-700 text-xl lg:text-2xl font-medium sm:text-center xs:test-center">
               {current.feedback}
             </p>
             <h3 className="text-primary-700 text-lg lg:text-2xl font-medium">

@@ -101,7 +101,7 @@ const MainForm = () => {
       <div className=" flex flex-col justify-start items-center gap-5">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold  tracking-wide">
+            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold  tracking-tight">
               Schedule Your Visit at AWCH
             </div>
           </div>
@@ -120,7 +120,7 @@ const MainForm = () => {
         >
           <div className="flex-1 self-stretch p-2.5  inline-flex flex-col justify-center items-center content-center gap-5 overflow-hidden ">
             <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-              <div className="self-stretch justify-start text-primary-700 text-2xl lg:text-4xl font-medium  tracking-wide">
+              <div className="self-stretch justify-start text-primary-700 text-2xl lg:text-4xl font-medium  tracking-tight">
                 Book your appointment online in just a few clicks and take the
                 first step toward better health today.
               </div>

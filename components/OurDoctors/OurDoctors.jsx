@@ -20,12 +20,12 @@ const doctors = [
     image: "/Doctors/neetu_singh.jpg",
     slug: "neetu-singh",
   },
-  {
-    name: "Dr. Sanjeeda Khanam",
-    image: "/placeholder.png", // placeholder image
-    slug: "sanjeeda-khanam",
-    comingSoon: true,
-  },
+  // {
+  //   // name: "Dr. Sanjeeda Khanam",
+  //   // image: "/placeholder.png", // placeholder image
+  //   // slug: "sanjeeda-khanam",
+  //   // comingSoon: true,
+  // },
 ];
 
 const OurDoctors = () => {
@@ -37,7 +37,7 @@ const OurDoctors = () => {
       <div className="flex flex-col justify-start items-center gap-5">
         <div className="self-stretch flex flex-col justify-start items-center">
           <div className="self-stretch p-2.5 flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold tracking-wide">
+            <div className="self-stretch text-center justify-start text-black-950 text-4xl lg:text-5xl font-bold tracking-tight">
               Meet Our Doctors
             </div>
           </div>
@@ -52,7 +52,7 @@ const OurDoctors = () => {
         {/* <div className="self-stretch px-2.5 py-10   justify-center items-center content-center gap-5 overflow-hidden flex-wrap grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-4"
           > */}
 
-        <div className="self-stretch px-2.5 py-10  gap-5 overflow-hidden justify-center items-center flex-wrap grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 ">
+        <div className="self-stretch px-2.5 py-10  gap-5 overflow-hidden justify-center items-center flex-wrap grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 ">
           {doctors.map((doctor, index) => (
             <Link href={`/doctors/${doctor.slug}`} key={index}>
               <div
@@ -71,7 +71,7 @@ const OurDoctors = () => {
                 />
 
                 {/* Gradient Overlays */}
-                <div className="absolute inset-0 bg-black/20 hover:bg-black/50 z-10" />
+                <div className="absolute inset-0 bg-black/40 hover:bg-black/50 z-10" />
 
                 {/* Content */}
                 <div className="absolute bottom-0 w-full p-5 z-30">
