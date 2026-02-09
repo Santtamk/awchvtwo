@@ -42,9 +42,7 @@ const MainForm = () => {
           Phone: ${formData.countryCode}${formData.phone}`,
       };
 
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/submissions`,
-        {
+      const response = await fetch('/api/submissions', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
