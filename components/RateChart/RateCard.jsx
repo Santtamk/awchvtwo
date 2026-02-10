@@ -18,7 +18,7 @@ const RateCard = ({ treatment }) => {
     <div className="w-full max-w-[650px] mx-auto bg-[#e5e5e5] rounded-[32px] overflow-visible shadow-sm flex flex-col font-sans relative min-h-[250px]">
       
       {/* Main Section: Pink Background */}
-      <div className="m-2 bg-[#a50062] rounded-[24px] pt-6 px-6 pb-6 text-white flex flex-col md:flex-row gap-6 relative h-[250px]">
+      <div className="m-2 bg-[#a50062] rounded-[24px] pt-6 px-6 pb-6 text-white flex flex-col md:flex-row gap-6 relative min-h-[250px] h-auto md:h-[250px]">
           
           {/* Left: Title & Description */}
           <div className="flex-1 flex flex-col justify-between overflow-hidden">
@@ -33,6 +33,9 @@ const RateCard = ({ treatment }) => {
                 </p>
               </div>
               <p className="text-[9px] mt-3 opacity-80">* T&C applied</p>
+              {treatment.extraNote && (
+                <p className="text-[10px] font-bold text-yellow-300 mt-1 uppercase">Includes: {treatment.extraNote}</p>
+              )}
           </div>
 
           {/* Right: Pricing Radio Buttons */}
