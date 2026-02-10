@@ -9,8 +9,9 @@ export async function generateStaticParams() {
 }
 
 export default async function DoctorPage({ params }) {
-  const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
-  const doctor = doctors.find((d) => d.slug === params.slug);
+  const resolvedParams = await params;
+  const slug = resolvedParams.slug;
+  const doctor = doctors.find((d) => d.slug === slug);
 
   if (!doctor)
     return <div className="text-center text-lg py-10">Doctor not found.</div>;
