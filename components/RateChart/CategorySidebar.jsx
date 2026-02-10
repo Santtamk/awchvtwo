@@ -13,7 +13,7 @@ const CategorySidebar = ({ categories, activeCategory, onSelectCategory }) => {
             <button
               key={category}
               onClick={() => onSelectCategory(category)}
-              className={`w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-all mb-1
+              className={`w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-all mb-1 cursor-pointer
                 ${
                   activeCategory === category
                     ? "bg-[#a50062]/10 text-[#a50062] font-semibold"

@@ -6,6 +6,7 @@ import BookingModal from "./BookingModal";
 const RateCard = ({ treatment }) => {
   const [selectedRoom, setSelectedRoom] = useState('private'); // Default to private
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const getRoomPrice = () => {
     return treatment.prices[selectedRoom];
@@ -15,22 +16,35 @@ const RateCard = ({ treatment }) => {
     setIsModalOpen(true);
   };
   return (
-    <div className="w-full max-w-[650px] mx-auto bg-[#e5e5e5] rounded-[32px] overflow-visible shadow-sm flex flex-col font-sans relative min-h-[250px]">
+    <div className={`w-full max-w-[650px] mx-auto bg-[#e5e5e5] rounded-[32px] overflow-visible shadow-sm flex flex-col font-sans relative transition-all duration-300 ${isExpanded ? 'h-auto' : 'min-h-[250px]'}`}>
       
       {/* Main Section: Pink Background */}
-      <div className="m-2 bg-[#a50062] rounded-[24px] pt-6 px-6 pb-6 text-white flex flex-col md:flex-row gap-6 relative min-h-[250px] h-auto md:h-[250px]">
+      <div className={`m-2 bg-[#a50062] rounded-[24px] pt-6 px-6 pb-6 text-white flex flex-col md:flex-row gap-6 relative transition-all duration-300 ${isExpanded ? 'h-auto' : 'min-h-[250px] h-auto md:h-[250px]'}`}>
           
           {/* Left: Title & Description */}
-          <div className="flex-1 flex flex-col justify-between overflow-hidden">
+          <div className="flex-1 flex flex-col justify-between">
               <div className="flex-1">
-                <h2 className={`font-bold mb-3 uppercase tracking-tight leading-tight ${
+                <h2 className={`font-bold mb-3 uppercase tracking-tight leading-tight break-words hyphens-auto ${
                   treatment.name.length > 20 ? 'text-xl md:text-2xl' : treatment.name.length > 12 ? 'text-2xl md:text-3xl' : 'text-3xl md:text-4xl'
                 }`}>
                     {treatment.name}
                 </h2>
-                <p className="text-sm leading-relaxed opacity-90 line-clamp-3">
+                <p className={`text-base leading-relaxed opacity-90 transition-all duration-300 ${
+                  isExpanded ? '' : 'md:line-clamp-3'
+                }`}>
                     {treatment.description}
                 </p>
+                {treatment.description.length > 50 && (
+                  <button 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setIsExpanded(!isExpanded);
+                    }}
+                    className="hidden md:block text-white font-bold text-sm mt-2 hover:underline focus:outline-none cursor-pointer p-1 -ml-1 transition-colors hover:text-gray-100"
+                  >
+                    {isExpanded ? "Read Less" : "Read More"}
+                  </button>
+                )}
               </div>
               <p className="text-[9px] mt-3 opacity-80">* T&C applied</p>
               {treatment.extraNote && (
@@ -102,9 +116,9 @@ const RateCard = ({ treatment }) => {
            {/* Book Now Button */}
            <button 
              onClick={handleBookNow}
-             className="flex items-center gap-2 text-[#a50062] font-bold text-xl md:text-2xl hover:gap-3 transition-all cursor-pointer"
+             className="flex items-center gap-2 bg-[#a50062] text-white px-6 py-3 rounded-xl font-bold text-lg hover:bg-[#85004f] hover:gap-3 transition-all shadow-md active:scale-95 cursor-pointer"
            >
-               Book Now <span className="text-lg">→</span>
+               Book Now <span className="text-xl">→</span>
            </button>
       </div>
 

@@ -52,7 +52,7 @@ const RateChartPage = () => {
           <div className="mt-8 inline-flex bg-gray-100 p-1 rounded-2xl">
             <button
               onClick={() => setActiveTab("treatments")}
-              className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
+              className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all cursor-pointer ${
                 activeTab === "treatments"
                   ? "bg-[#a50062] text-white shadow-md"
                   : "text-gray-600 hover:text-gray-900"
@@ -62,7 +62,7 @@ const RateChartPage = () => {
             </button>
             <button
               onClick={() => setActiveTab("tariff")}
-              className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
+              className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all cursor-pointer ${
                 activeTab === "tariff"
                   ? "bg-[#a50062] text-white shadow-md"
                   : "text-gray-600 hover:text-gray-900"
@@ -120,7 +120,7 @@ const RateChartPage = () => {
                           window.scrollTo({ top: 0, behavior: 'smooth' });
                         }}
                         disabled={currentPage === 1}
-                        className="px-4 py-2 rounded-lg border border-gray-200 text-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors shadow-sm"
+                        className="px-4 py-2 rounded-lg border border-gray-200 text-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors shadow-sm cursor-pointer"
                       >
                         Previous
                       </button>
@@ -159,7 +159,7 @@ const RateChartPage = () => {
                                   ? 'bg-[#a50062] text-white shadow-md transform scale-105' 
                                   : page === '...' 
                                     ? 'text-gray-400 cursor-default' 
-                                    : 'text-gray-600 hover:bg-gray-50 border border-transparent hover:border-gray-200'
+                                    : 'text-gray-600 hover:bg-gray-50 border border-transparent hover:border-gray-200 cursor-pointer'
                                 }
                               `}
                             >
@@ -180,7 +180,7 @@ const RateChartPage = () => {
                           window.scrollTo({ top: 0, behavior: 'smooth' });
                         }}
                         disabled={currentPage === totalPages}
-                        className="px-4 py-2 rounded-lg border border-gray-200 text-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors shadow-sm"
+                        className="px-4 py-2 rounded-lg border border-gray-200 text-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors shadow-sm cursor-pointer"
                       >
                         Next
                       </button>
@@ -192,7 +192,7 @@ const RateChartPage = () => {
                   <p className="text-xl text-gray-500 font-medium">No treatments found for this category.</p>
                   <button 
                     onClick={() => setActiveCategory("All")}
-                    className="mt-4 text-[#a50062] font-semibold hover:underline"
+                    className="mt-4 text-[#a50062] font-semibold hover:underline cursor-pointer"
                   >
                     View all treatments
                   </button>

@@ -13,7 +13,7 @@ const FilterBar = ({ categories, activeCategory, onSelectCategory }) => {
         <div className="relative">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="w-full bg-white border border-gray-300 text-gray-700 font-semibold py-3 px-4 rounded-xl shadow-sm hover:border-[#a50062] focus:outline-none focus:ring-2 focus:ring-[#a50062]/20 transition-all flex justify-between items-center"
+            className="w-full bg-white border border-gray-300 text-gray-700 font-semibold py-3 px-4 rounded-xl shadow-sm hover:border-[#a50062] focus:outline-none focus:ring-2 focus:ring-[#a50062]/20 transition-all flex justify-between items-center cursor-pointer"
           >
             <span className="truncate">{activeCategory}</span>
             <svg
