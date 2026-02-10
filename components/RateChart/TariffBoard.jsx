@@ -64,7 +64,7 @@ const TariffBoard = () => {
         <p className="mt-2 text-gray-600">Detailed breakdown of accommodation, procedure, and ICU charges.</p>
       </div>
 
-      <TariffSection title="1. Accomodation / Room Tariff" data={roomTariff} />
+      <TariffSection title="1. Accommodation / Room Tariff" data={roomTariff} />
       <TariffSection title="2. Procedure Charges" data={procedureCharges} />
       <TariffSection title="ICU Procedure Rate Chart" data={icuProcedureCharges} />
       
