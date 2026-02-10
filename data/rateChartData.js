@@ -923,58 +923,6 @@ export const treatments = [
     insurerApproved: true,
   },
   
-  // Pediatrics
-  {
-    id: 27,
-    category: "Pediatrics",
-    name: "Pediatric Hernia Repair",
-    description: "Surgical repair of inguinal or umbilical hernias in children.",
-    prices: { semiPrivate: 0, general: 22000, private: 32000, deluxe: 45000 },
-    insurerApproved: true,
-  },
-  {
-    id: 28,
-    category: "Pediatrics",
-    name: "Orchidopexy",
-    description: "Surgical correction of undescended testicle in children.",
-    prices: { semiPrivate: 0, general: 18000, private: 26000, deluxe: 38000 },
-    insurerApproved: true,
-  },
-  {
-    id: 29,
-    category: "Pediatrics",
-    name: "Hypospadias Repair",
-    description: "Surgical correction of a congenital condition affecting the urethra opening.",
-    prices: { semiPrivate: 0, general: 35000, private: 50000, deluxe: 70000 },
-    insurerApproved: true,
-  },
-  
-  // Neurology/Neurosurgery
-  {
-    id: 30,
-    category: "Neurology",
-    name: "Craniotomy",
-    description: "Surgical opening of the skull to access the brain for treatment.",
-    prices: { semiPrivate: 0, general: 180000, private: 250000, deluxe: 350000 },
-    insurerApproved: true,
-  },
-  {
-    id: 31,
-    category: "Neurology",
-    name: "Brain Tumor Resection",
-    description: "Surgical removal of brain tumors to reduce symptoms and improve outcomes.",
-    prices: { semiPrivate: 0, general: 200000, private: 280000, deluxe: 400000 },
-    insurerApproved: true,
-  },
-  {
-    id: 32,
-    category: "Neurology",
-    name: "VP Shunt Placement",
-    description: "Surgical placement of a shunt to drain excess cerebrospinal fluid.",
-    prices: { semiPrivate: 0, general: 80000, private: 110000, deluxe: 150000 },
-    insurerApproved: true,
-  },
-  
   // Cardiology
   {
     id: 33,
@@ -992,79 +940,15 @@ export const treatments = [
     prices: { general: 48000, semiPrivate: 53000, private: 75000 },
     insurerApproved: true,
   },
-  
-  // Ophthalmology
-  {
-    id: 36,
-    category: "Ophthalmology",
-    name: "Cataract Surgery (Phacoemulsification)",
-    description: "Minimally invasive surgery to remove cataracts and restore vision.",
-    prices: { semiPrivate: 0, general: 25000, private: 35000, deluxe: 50000 },
-    insurerApproved: true,
-  },
-  {
-    id: 37,
-    category: "Ophthalmology",
-    name: "Glaucoma Surgery (Trabeculectomy)",
-    description: "Surgical procedure to reduce intraocular pressure in glaucoma patients.",
-    prices: { semiPrivate: 0, general: 35000, private: 48000, deluxe: 65000 },
-    insurerApproved: true,
-  },
-  {
-    id: 38,
-    category: "Ophthalmology",
-    name: "Retinal Detachment Repair",
-    description: "Surgical procedure to reattach the retina and preserve vision.",
-    prices: { semiPrivate: 0, general: 50000, private: 70000, deluxe: 95000 },
-    insurerApproved: true,
-  },
-  {
-    id: 39,
-    category: "Ophthalmology",
-    name: "LASIK Eye Surgery",
-    description: "Laser-assisted procedure to correct refractive errors and reduce dependency on glasses.",
-    prices: { semiPrivate: 0, general: 40000, private: 55000, deluxe: 75000 },
-    insurerApproved: true,
-  },
-  
-  // Gastroenterology
-  {
-    id: 40,
-    category: "Gastroenterology",
-    name: "Colonoscopy with Polypectomy",
-    description: "Diagnostic and therapeutic procedure to examine colon and remove polyps.",
-    prices: { semiPrivate: 0, general: 18000, private: 25000, deluxe: 35000 },
-    insurerApproved: true,
-  },
-  {
-    id: 41,
-    category: "Gastroenterology",
-    name: "Upper GI Endoscopy",
-    description: "Procedure to examine the upper digestive tract using an endoscope.",
-    prices: { semiPrivate: 0, general: 8000, private: 12000, deluxe: 18000 },
-    insurerApproved: true,
-  },
-  {
-    id: 42,
-    category: "Gastroenterology",
-    name: "ERCP (Endoscopic Retrograde Cholangiopancreatography)",
-    description: "Procedure to diagnose and treat problems in bile and pancreatic ducts.",
-    prices: { semiPrivate: 0, general: 35000, private: 48000, deluxe: 65000 },
-    insurerApproved: true,
-  },
 ];
 
 export const categories = [
   "All",
-  "ENT",
+  "Cardiology",
+  "Urology & Nephrology",
+  "Orthopedics",
+  "Obs & Gynae",
   "General Surgery",
   "Vascular Surgery",
-  "Obs & Gynae",
-  "Orthopedics",
-  "Pediatrics",
-  "Neurology",
-  "Urology & Nephrology",
-  "Cardiology",
-  "Ophthalmology",
-  "Gastroenterology",
+  "ENT",
 ];
