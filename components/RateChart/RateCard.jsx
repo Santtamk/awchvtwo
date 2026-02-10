@@ -50,12 +50,27 @@ const RateCard = ({ treatment }) => {
                     </div>
                   </div>
                   <div>
-                      <p className="text-[8px] uppercase tracking-wide opacity-90 leading-tight">General RoomCharge</p>
+                      <p className="text-[8px] uppercase tracking-wide opacity-90 leading-tight">General Ward</p>
                       <p className="text-lg font-bold leading-none mt-0.5">₹{treatment.prices.general}/-</p>
                   </div>
               </label>
 
-               {/* Private */}
+               {/* Twin Sharing (Mapped to semiPrivate) */}
+               <label className="flex items-start gap-2.5 cursor-pointer" onClick={() => setSelectedRoom('semiPrivate')}>
+                  <div className="mt-0.5">
+                    <div className={`w-5 h-5 rounded-md flex items-center justify-center transition-all ${
+                      selectedRoom === 'semiPrivate' ? 'bg-white' : 'border-2 border-white'
+                    }`}>
+                      {selectedRoom === 'semiPrivate' && <IoCheckmark size={18} strokeWidth={5} className="text-[#a50062]" />}
+                    </div>
+                  </div>
+                  <div>
+                      <p className="text-[8px] uppercase tracking-wide opacity-90 leading-tight">Twin Sharing</p>
+                      <p className="text-lg font-bold leading-none mt-0.5">₹{treatment.prices.semiPrivate || "NA"}/-</p>
+                  </div>
+              </label>
+
+               {/* Single A.C Room (Mapped to private) */}
                <label className="flex items-start gap-2.5 cursor-pointer" onClick={() => setSelectedRoom('private')}>
                   <div className="mt-0.5">
                     <div className={`w-5 h-5 rounded-md flex items-center justify-center transition-all ${
@@ -65,23 +80,8 @@ const RateCard = ({ treatment }) => {
                     </div>
                   </div>
                   <div>
-                      <p className="text-[8px] uppercase tracking-wide opacity-90 leading-tight">(Per Day) P.V.T Room Charge</p>
+                      <p className="text-[8px] uppercase tracking-wide opacity-90 leading-tight">Single A.C Room</p>
                       <p className="text-lg font-bold leading-none mt-0.5">₹{treatment.prices.private}/-</p>
-                  </div>
-              </label>
-
-               {/* Deluxe */}
-              <label className="flex items-start gap-2.5 cursor-pointer" onClick={() => setSelectedRoom('deluxe')}>
-                  <div className="mt-0.5">
-                    <div className={`w-5 h-5 rounded-md flex items-center justify-center transition-all ${
-                      selectedRoom === 'deluxe' ? 'bg-white' : 'border-2 border-white'
-                    }`}>
-                      {selectedRoom === 'deluxe' && <IoCheckmark size={18} strokeWidth={5} className="text-[#a50062]" />}
-                    </div>
-                  </div>
-                  <div>
-                      <p className="text-[8px] uppercase tracking-wide opacity-90 leading-tight">(Per Day) Deluxe Room Charge</p>
-                      <p className="text-lg font-bold leading-none mt-0.5">₹{treatment.prices.deluxe}/-</p>
                   </div>
               </label>
           </div>
