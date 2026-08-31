@@ -25,10 +25,18 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className=" flex flex-col justify-start items-start overflow-hidden">
+        <div className=" flex flex-col justify-start items-start overflow-hidden gap-1">
           <div className=" text-black-50 text-[8px] lg:text-lg font-medium">
             © 2025 AWCH. All rights reserved.
           </div>
+          <Link
+            href="https://www.1947.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black-50 text-[8px] lg:text-lg font-medium hover:underline"
+          >
+            Designed by Studio 1947
+          </Link>
         </div>
       </div>
       <div className="flex self-stretch   flex-col justify-start  gap-2 overflow-hidden lg:w-1/2">
